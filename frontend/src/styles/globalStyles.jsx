@@ -13,6 +13,9 @@ export const GlobalStyle = createGlobalStyle`
 
   html,
   body {
+    max-width: 1500px !important;
+    width: 100%;
+    margin: 0 auto;
     background-image: repeating-linear-gradient(
       to right,
       #2d2a44 0 1px,
@@ -26,6 +29,8 @@ export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar{
       display: none;
     }
+
+    ${'' /* border: 2px solid red; */}
   }
 
      * {
@@ -44,21 +49,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
 main {
-  padding-top: 180px !important;
+  ${'' /* padding-top: 180px !important; */}
 
 }
 
 main .banner {
-  height: 100vh;
-  ${
-    '' /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  }
-  gap: 20px;
-  ${'' /* text-align: center; */}
-  margin-top: -70px;
+  height: auto;
+  ${'' /* margin-top: -70px; */}
 }
 
 

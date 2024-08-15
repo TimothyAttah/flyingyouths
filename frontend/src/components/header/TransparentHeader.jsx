@@ -9,6 +9,13 @@ import { FadeIn } from '../fadeIn/FadeIn';
 
 const TransparentHeader = () => {
   const [showSidebar, setShowSidebar] = useState(false);
+  const [changeBG, setChangeBG] = useState(false)
+
+  const changeBackground = () => {
+    window.scrollY >= 80 ? setChangeBG(true) : setChangeBG(false)
+  }
+
+  window.addEventListener('scroll', changeBackground)
 
   const handleLogout = () => {
     localStorage.removeItem('user');
@@ -17,9 +24,9 @@ const TransparentHeader = () => {
 
   return (
     <Styles.HeaderWrapper>
-      <Styles.MainHeaderContainer>
+      <Styles.MainHeaderContainer className={changeBG ? 'activeHeader' : ''}>
         <Styles.HeaderLogo>
-          <Link to='/'>
+          <Link to='/' className={changeBG ? 'activeLogo' : ''}>
             <h1>FlyingYouth</h1>
           </Link>
         </Styles.HeaderLogo>

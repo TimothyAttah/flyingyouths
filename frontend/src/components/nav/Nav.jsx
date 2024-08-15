@@ -11,7 +11,7 @@ const navData = [
   },
   {
     navName: 'About',
-    path: '/about',
+    path: '/about_us',
   },
   {
     navName: 'Tuition & Fees',

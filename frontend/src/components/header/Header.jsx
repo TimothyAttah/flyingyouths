@@ -4,10 +4,16 @@ import MainHeader from './MainHeader';
 
 const Header = () => {
   const location = useLocation();
+  const user = true;
 
   return (
     <>
-      {location.pathname === '/' || location.pathname === '/about' ? (
+      {/* {location.pathname === '/' || location.pathname === '/about' ? (
+        <TransparentHeader />
+      ) : (
+        <MainHeader />
+      )} */}
+      {user? (
         <TransparentHeader />
       ) : (
         <MainHeader />

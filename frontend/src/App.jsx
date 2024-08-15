@@ -11,6 +11,9 @@ import Layout from './components/Layout';
 import Payment from './pages/payment/Payment';
 import ConfirmPayment from './pages/payment/ConfirmPayment';
 import Tutorial from './pages/tutorials/Tutorial';
+import About from './pages/about/About';
+import Faqs from './pages/faqs/Faqs';
+import Fees from './pages/fees/Fees';
 
 const App = () => {
   useEffect(() => {
@@ -21,6 +24,9 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route path='/' element={<Home />} />
+          <Route path='/about_us' element={<About />} />
+          <Route path='/faqs' element={<Faqs />} />
+          <Route path='/fees' element={<Fees />} />
         </Route>
       </Routes>
       <ToastContainer />

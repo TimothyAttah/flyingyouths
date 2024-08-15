@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Styles from './SideBarStyles';
-// import { NavLink } from 'react-router-dom';
-import { NavLink } from '../navlink/NavLink';
+import { NavLink } from 'react-router-dom';
+// import { NavLink } from '../navlink/NavLink';
 import { FaTimes } from 'react-icons/fa';
 import Backdrop from '../Backdrop';
 import { user } from '../Authentication';
@@ -44,7 +44,7 @@ const navData = [
   },
   {
     navName: 'About',
-    path: '/about',
+    path: '/about_us',
     icon: <RiPagesFill />,
   },
   {

@@ -5,10 +5,18 @@ export const HeaderWrapper = styled.div`
   transition: 1s ease-in-out all;
   position: relative;
   .activeHeader {
-    background: ${theme.color.mainColor};
+    --to: left;
+    background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
     color: #fff;
     transition: 1s ease-in-out all;
     box-shadow: ${theme.color.boxShadow};
+  }
+
+  .activeLogo  h1 {
+    --to: left;
+    background-image: linear-gradient(to var(--to), #000, #000, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .transparent {
@@ -58,6 +66,7 @@ export const MainHeaderContainer = styled.div`
 `;
 
 export const HeaderLogo = styled.div`
+
   a {
     display: flex;
     align-items: center;

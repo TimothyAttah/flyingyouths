@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeroContainer = styled.div`
   padding: 20px;
+  padding-top: 150px;
   h1 {
     text-align: center;
     --to: left;
@@ -81,6 +82,7 @@ export const HeroButton = styled.div`
     width: 100%;
     height: 100%;
     background-color: transparent;
+    color: #fff;
   }
 
   :hover {
