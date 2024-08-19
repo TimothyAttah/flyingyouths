@@ -50,7 +50,7 @@ export const MainHeaderContainer = styled.div`
   top: 0;
   height: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0 20px;
   z-index: 999;
@@ -97,7 +97,7 @@ export const HeaderContainer = styled.header`
   top: 0;
   height: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0 20px;
   z-index: 999;

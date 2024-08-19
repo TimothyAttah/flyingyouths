@@ -6,25 +6,56 @@ export const WelcomeContainer = styled.div`
   justify-content: space-around;
   /* gap: 50px; */
   padding-top: 50px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const WelcomeContentContainer = styled.div`
-  width: 600px;
+  max-width: 600px;
   padding: 20px;
-
   transition: 5s ease all;
+  background-color: #fff;
+  border-radius: 30px;
+  padding-top: 30px;
+  box-shadow: 0 0 10px hsla(#2d2a44, 57%, 63%, 0.3);
+  box-shadow: 0 0 10px rgba( 0,0,0,0.1, #1d1b34);
+
 
   h4 {
     padding-bottom: 15px;
     font-size: 26px;
     text-transform: capitalize;
-    color: #fff;
+    /* color: #fff; */
+    background-image: repeating-linear-gradient(
+        to right,
+        #2d2a44 0 1px,
+        transparent 2px 200px
+      ),
+      repeating-linear-gradient(to bottom, #2d2a44 0 1px, transparent 2px 200px),
+      radial-gradient(at 50% 50%, #2d2a44, #1d1b34);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   p {
     margin-bottom: 10px;
     font-size: 18px;
     line-height: 25px;
+    background-image: repeating-linear-gradient(
+        to right,
+        #2d2a44 0 1px,
+        transparent 2px 200px
+      ),
+      repeating-linear-gradient(to bottom, #2d2a44 0 1px, transparent 2px 200px),
+      radial-gradient(at 50% 50%, #2d2a44, #1d1b34);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   small {
@@ -57,10 +88,8 @@ export const DirectorName = styled.p`
   }
 `;
 
-
-
 export const WelcomeImgContainer = styled.div`
-  width: 500px;
+  max-width: 500px;
   transition: 5s ease all;
 
   img {

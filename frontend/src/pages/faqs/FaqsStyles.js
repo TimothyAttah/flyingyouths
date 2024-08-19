@@ -26,6 +26,10 @@ export const FaqsMainContainer = styled.div`
     font-size: 40px;
     text-transform: capitalize;
     font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 
   .faqs.active .answer {
@@ -88,12 +92,14 @@ export const FaqsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 10px;
 
   h2 {
     font-size: 40px;
     text-transform: capitalize;
     font-family: cursive;
     color: #fff;
+    text-align: center;
   }
 `;
 

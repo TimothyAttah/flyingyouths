@@ -5,10 +5,10 @@ import * as Styles from './NavStyles';
 import { FaBars } from 'react-icons/fa';
 
 const navData = [
-  {
-    navName: 'Courses',
-    path: '/courses',
-  },
+  // {
+  //   navName: 'Courses',
+  //   path: '/courses',
+  // },
   {
     navName: 'About',
     path: '/about_us',

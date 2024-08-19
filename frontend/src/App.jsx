@@ -1,24 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import { Route, Routes } from 'react-router-dom';
-import Aos from 'aos';
 import Home from './pages/home/Home';
-import RegistrationSuccess from './pages/RegistrationSuccess';
-import Dashboard from './pages/Dashboard';
-import { RequireAuth, RequireConfirmation } from './components/Authentication';
-import VerifyPayment from './pages/payment/VerifyPayment';
 import Layout from './components/Layout';
-import Payment from './pages/payment/Payment';
-import ConfirmPayment from './pages/payment/ConfirmPayment';
-import Tutorial from './pages/tutorials/Tutorial';
 import About from './pages/about/About';
 import Faqs from './pages/faqs/Faqs';
 import Fees from './pages/fees/Fees';
+import Contact from './pages/contact/Contact';
+import RegisterAndLogin from './pages/registerAndLogin/RegisterAndLogin';
 
 const App = () => {
-  useEffect(() => {
-    Aos.init({duration: 3000});
-  }, []);
   return (
     <>
       <Routes>
@@ -27,6 +18,8 @@ const App = () => {
           <Route path='/about_us' element={<About />} />
           <Route path='/faqs' element={<Faqs />} />
           <Route path='/fees' element={<Fees />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/students/register' element={<RegisterAndLogin />} />
         </Route>
       </Routes>
       <ToastContainer />

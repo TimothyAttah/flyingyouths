@@ -2,10 +2,8 @@ export const validRegister = async (req, res, next) => {
   const {
     firstname,
     lastname,
-    gender,
     phoneNumber,
     dateOfBirth,
-    highestQualification,
     email,
     password,
   } = req.body;
@@ -16,9 +14,6 @@ export const validRegister = async (req, res, next) => {
   if (!lastname)
     return res.status(400).json({ msg: 'Please enter your last name.' });
 
-  if (!gender)
-    return res.status(400).json({ msg: 'Please enter your gender.' });
-
   if (!phoneNumber) {
     return res.status(400).json({ msg: 'Please enter your phone number.' });
   }
@@ -26,10 +21,6 @@ export const validRegister = async (req, res, next) => {
   if (!dateOfBirth)
     return res.status(400).json({ msg: 'Please enter your date of birth.' });
 
-  if (!highestQualification)
-    return res
-      .status(400)
-      .json({ msg: 'Please enter your highest qualification.' });
 
   if (!email) {
     return res.status(400).json({ msg: 'Please enter your email address.' });

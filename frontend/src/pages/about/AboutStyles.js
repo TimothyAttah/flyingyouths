@@ -104,6 +104,7 @@ export const AboutImgContent = styled.div`
 export const AboutMainContainer = styled.div`
   display: flex;
   justify-content: space-around;
+  padding: 0 20px;
   align-items: center;
   flex-wrap: wrap;
 
@@ -113,8 +114,9 @@ export const AboutMainContainer = styled.div`
 `;
 
 export const AboutInfoContainer = styled.div`
-  width: 700px;
+  max-width: 600px;
   margin-top: 40px;
+  padding: 0 20px;
   h3 {
     color: white;
     position: relative;
@@ -172,11 +174,13 @@ export const AboutInfoOptionsContainer = styled.div`
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 50px;
+  width: 100%;
 
   @media screen and (max-width: 600px) {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   text-align: center;
    margin-top: 30px;
   }
 `;
@@ -185,15 +189,21 @@ export const AboutMainInfoContainer = styled.div`
   p {
     font-size: 14px;
   }
+
+  @media screen and (max-width: 600px){
+    p {
+      text-align: center;
+    }
+  }
 `;
 
 export const AboutInfoOptions = styled.div`
-  max-width: 300px;
-  width: 100%;
+  max-width: 250px;
   h4 {
     font-size: 16px;
     text-transform: capitalize;
     color: #fff;
+    text-align: center;
   }
 
   p {
@@ -215,6 +225,7 @@ export const AboutInfoImgContainer = styled.div`
 `;
 export const AboutTeamContainer = styled.div`
   text-align: center;
+  margin-top: 50px;
   h4 {
     text-transform: capitalize;
     color:#fff;

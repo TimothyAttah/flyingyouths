@@ -31,14 +31,14 @@ const TransparentHeader = () => {
           </Link>
         </Styles.HeaderLogo>
         <Nav setShowSidebar={setShowSidebar} />
-        <Styles.HeaderButtonBox>
+        {/* <Styles.HeaderButtonBox>
           <Link to='/students/register'>
             <Styles.HeaderButton>Register</Styles.HeaderButton>
           </Link>
           <Link to='/students/login'>
             <Styles.HeaderButton>Login</Styles.HeaderButton>
           </Link>
-        </Styles.HeaderButtonBox>
+        </Styles.HeaderButtonBox> */}
 
         <AnimatePresence>
           {showSidebar && <SideBar setShowSidebar={setShowSidebar} />}

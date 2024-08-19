@@ -8,10 +8,8 @@ const authControllers = {
       const {
         firstname,
         lastname,
-        gender,
         phoneNumber,
         dateOfBirth,
-        highestQualification,
         email,
         password,
       } = req.body;
@@ -24,10 +22,8 @@ const authControllers = {
       const newUser = await User({
         firstname,
         lastname,
-        gender,
         phoneNumber,
         dateOfBirth,
-        highestQualification,
         email,
         password: hashPassword,
       });

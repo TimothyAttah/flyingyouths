@@ -26,9 +26,9 @@ const FadeInStyle = styled(motion.div)`
 
 const FadeInMotionStyle = styled(motion.div)`
   width: 100%;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: ${(props) => (props.center ? 'center' : '')};
+  justify-content: ${(props) => (props.center ? 'center' : '')}; */
 `;
 
 export const FadeIn = ({
