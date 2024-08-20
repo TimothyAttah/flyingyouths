@@ -27,7 +27,7 @@ const TransparentHeader = () => {
       <Styles.MainHeaderContainer className={changeBG ? 'activeHeader' : ''}>
         <Styles.HeaderLogo>
           <Link to='/' className={changeBG ? 'activeLogo' : ''}>
-            <h1>FlyingYouth</h1>
+            <h1>EarnBigFromTech</h1>
           </Link>
         </Styles.HeaderLogo>
         <Nav setShowSidebar={setShowSidebar} />

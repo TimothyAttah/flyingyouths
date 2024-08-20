@@ -8,21 +8,21 @@ export const Hero = () => {
     <Styles.HeroContainer>
       <FadeIn delay={0.4} direction='down'>
         <h1>
-          Welcome to flyingyouths.tech centre for open distance and e-Learning
+          {/* Welcome to EarnBigFromTech centre for open distance and e-Learning */}
+          Welcome to EarnBigFromTech school, powered by Enoch Louis Ventures LTD,
         </h1>
       </FadeIn>
 
       <FadeIn delay={0.5} direction='down'>
         <h1 className='right'>
-          Choosing the Right Education Level for Your Future Success
+          {/* Choosing the Right Education Level for Your Future Success */}
+          we offer training in tech skills.
         </h1>
       </FadeIn>
 
       <FadeIn delay={0.6} direction='down' center='true'>
         <Styles.HeroSubTitle>
-          Explore different education levels and find the perfect fit for your
-          future success. Discover the benefits of each level and take the next
-          step towards achieving your goals.
+          Everyone deserves a super brighter future, come even if you know nothing at all, we are ready to train you from novice to become a tech expert in few weeks, check out our courses.
         </Styles.HeroSubTitle>
       </FadeIn>
 

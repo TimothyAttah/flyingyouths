@@ -11,7 +11,7 @@ export const HeroContainer = styled.div`
     background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     line-height: 3.5rem;
     padding-bottom: 5px;
   }
