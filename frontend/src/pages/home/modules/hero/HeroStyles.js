@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
   padding: 20px;
@@ -8,10 +8,11 @@ export const HeroContainer = styled.div`
     --to: left;
     font-size: 3rem;
     font-weight: bold;
-    background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
+    /* background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     /* text-transform: uppercase; */
+    color:#333;
     line-height: 3.5rem;
     padding-bottom: 5px;
   }
@@ -43,19 +44,30 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroSubTitle = styled.p`
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   text-align: center;
-  color: #fff;
+  color: #333;
   font-size: 1.4rem;
+
+  /* span {
+    --to: left;
+    background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
+
+  span {
+    color: blue;
+  }
 
   @media screen and (max-width: 570px) {
     font-size: 1rem;
   }
 
   @media screen and (max-width: 375px) {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 `;
 
@@ -69,7 +81,7 @@ export const HeroButton = styled.div`
   border: 1px solid #afaeae55;
   /* padding: 10px 20px; */
   border-radius: 10px;
-  background-image: linear-gradient(to bottom, #eee1, transparent, #eee1);
+  /* background-image: linear-gradient(to bottom, #eee1, transparent, #eee1); */
   transition: 0.5s;
   margin: auto;
 
@@ -81,7 +93,7 @@ export const HeroButton = styled.div`
     text-transform: uppercase;
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    background-color: #333;
     color: #fff;
   }
 

@@ -9,7 +9,8 @@ export const Hero = () => {
       <FadeIn delay={0.4} direction='down'>
         <h1>
           {/* Welcome to EarnBigFromTech centre for open distance and e-Learning */}
-          Welcome to EarnBigFromTech school, powered by Enoch Louis Ventures LTD,
+          Welcome to EarnBigFromTech school, powered by Enoch Louis Ventures
+          LTD,
         </h1>
       </FadeIn>
 
@@ -22,7 +23,10 @@ export const Hero = () => {
 
       <FadeIn delay={0.6} direction='down' center='true'>
         <Styles.HeroSubTitle>
-          Everyone deserves a super brighter future, come even if you know nothing at all, we are ready to train you from novice to become a tech expert in few weeks, check out our courses.
+          Everyone deserves a super brighter future,
+          <span> come even if you know nothing at all,</span> we are ready to
+          train you from novice to become a tech expert in few weeks, check out
+          our courses.
         </Styles.HeroSubTitle>
       </FadeIn>
 

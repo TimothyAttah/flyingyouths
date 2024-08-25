@@ -70,6 +70,7 @@ export const NavContainer = styled.nav`
     a {
       background: transparent;
       color: #fff;
+      /* color: #333; */
       /* color: #000; */
       font-size: 18px;
       font-weight: bold;

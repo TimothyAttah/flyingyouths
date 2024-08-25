@@ -4,19 +4,26 @@ import { theme } from '../../themes';
 export const HeaderWrapper = styled.div`
   transition: 1s ease-in-out all;
   position: relative;
+  background-color: #333;
+  background-color: #0d6efd;
+
   .activeHeader {
-    --to: left;
+    /* --to: left;
     background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
+     */
+
+    background-color: #333;
     color: #fff;
     transition: 1s ease-in-out all;
     box-shadow: ${theme.color.boxShadow};
   }
 
-  .activeLogo  h1 {
-    --to: left;
+  .activeLogo h1 {
+    /* --to: left;
     background-image: linear-gradient(to var(--to), #000, #000, #000);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color: #fff;
   }
 
   .transparent {
@@ -58,7 +65,9 @@ export const MainHeaderContainer = styled.div`
   color: #fff;
   font-weight: bold;
   transition: 1s ease-in-out all;
-  background: ${theme.color.mainColor};
+  /* background: ${theme.color.mainColor}; */
+  background-color: #333;
+  background-color: #0d6efd;
 
   a {
     color: #fff;
@@ -66,16 +75,16 @@ export const MainHeaderContainer = styled.div`
 `;
 
 export const HeaderLogo = styled.div`
-
   a {
     display: flex;
     align-items: center;
   }
   h1 {
-    --to: left;
+    /* --to: left;
     background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color: #fff;
     text-transform: capitalize;
     font-weight: bold;
     display: flex;

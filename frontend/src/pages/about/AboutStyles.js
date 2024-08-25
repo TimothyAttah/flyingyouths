@@ -40,6 +40,7 @@ export const AboutImgContent = styled.div`
 
   h6 {
     color: white;
+    
     margin: 0 auto;
     font-weight: bold;
     text-transform: uppercase;
@@ -119,6 +120,8 @@ export const AboutInfoContainer = styled.div`
   padding: 0 20px;
   h3 {
     color: white;
+    color: #333;
+
     position: relative;
     width: 300px;
     margin: 0 auto;
@@ -144,6 +147,8 @@ export const AboutInfoContainer = styled.div`
       width: 50px;
       height: 2px;
       background-color: #fff;
+      /* color: #333; */
+
       position: absolute;
       bottom: 50%;
       right: 18px;
@@ -203,6 +208,8 @@ export const AboutInfoOptions = styled.div`
     font-size: 16px;
     text-transform: capitalize;
     color: #fff;
+    color: #333;
+
     text-align: center;
   }
 
@@ -229,6 +236,7 @@ export const AboutTeamContainer = styled.div`
   h4 {
     text-transform: capitalize;
     color:#fff;
+    color:#333;
   }
 `;
 export const AboutTeamImgContainer = styled.div`

@@ -16,13 +16,15 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 1500px !important;
     width: 100%;
     margin: 0 auto;
-    background-image: repeating-linear-gradient(
+    ${'' /* background-image: repeating-linear-gradient(
       to right,
       #2d2a44 0 1px,
       transparent 2px 200px
     ),
     repeating-linear-gradient(to bottom, #2d2a44 0 1px, transparent 2px 200px),
-    radial-gradient(at 50% 50%, #2d2a44, #1d1b34);
+    radial-gradient(at 50% 50%, #2d2a44, #1d1b34); */}
+    ${'' /* background-color:#fff; */}
+    color:#333;
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
