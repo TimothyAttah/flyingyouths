@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import * as Styles from './NavStyles';
 import { FaBars } from 'react-icons/fa';
 
-const navData = [
+export const navData = [
   // {
   //   navName: 'Courses',
   //   path: '/courses',

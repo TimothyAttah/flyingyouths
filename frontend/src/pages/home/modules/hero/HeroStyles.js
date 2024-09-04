@@ -59,7 +59,7 @@ export const HeroSubTitle = styled.p`
   } */
 
   span {
-    color: blue;
+    color: #0d6efd;
   }
 
   @media screen and (max-width: 570px) {
@@ -78,12 +78,13 @@ export const HeroButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #afaeae55;
+  /* border: 1px solid #afaeae55; */
   /* padding: 10px 20px; */
-  border-radius: 10px;
   /* background-image: linear-gradient(to bottom, #eee1, transparent, #eee1); */
   transition: 0.5s;
   margin: auto;
+  margin-top: 12px;
+  border: none;
 
   a,
   button {
@@ -94,12 +95,19 @@ export const HeroButton = styled.div`
     width: 100%;
     height: 100%;
     background-color: #333;
+    background-color: #0d6efd;
     color: #fff;
-  }
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s;
 
-  :hover {
-    background-color: #c691e6;
-    color: #040018;
-    box-shadow: 0 0 50px #c691e6;
+    :hover {
+      background-color: #c691e6;
+      background-color: #0d6ade;
+      background-color: #333;
+
+      /* color: #040018; */
+      /* box-shadow: 0 0 50px #c691e6; */
+    }
   }
 `;

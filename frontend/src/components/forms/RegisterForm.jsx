@@ -52,6 +52,7 @@ const RegisterForm = () => {
 
   return (
     <>
+      <h1>Register</h1>
       <form action=''>
         <Styles.InputBoxWrapper>
           <Styles.InputBox>
@@ -91,7 +92,7 @@ const RegisterForm = () => {
           </Styles.InputBox>
         </Styles.InputBoxWrapper>
 
-        <Styles.PasswordInputBox>
+        {/* <Styles.PasswordInputBox>
           <Styles.InputBox>
             <span>
               <FaKey />
@@ -129,15 +130,30 @@ const RegisterForm = () => {
           <small onClick={() => setShowConfirmPassword(!showConfirmPassword)}>
             {showConfirmPassword ? 'hide password' : 'show password'}
           </small>
-        </Styles.PasswordInputBox>
+        </Styles.PasswordInputBox> */}
+
+        <p>State of residence: which is a select box</p>
+
+        <Styles.SelectBox>
+          <select name='program' id='program'>
+            <option value=''>State of residence</option>
+            <option value='ms-word'>Microsoft word</option>
+            <option value='ms-excel'>Microsoft excel</option>
+            <option value='robotics'>Robotics</option>
+            <option value='frontend-development'>frontend development</option>
+            <option value='backend-development'>backend development</option>
+            <option value='fullstack-development'>fullstack development</option>
+          </select>
+        </Styles.SelectBox>
 
         <Styles.InputBoxWrapper>
           <Styles.SelectBox>
             <select name='program' id='program'>
               <option value=''>select program</option>
-              <option value='ms-word'>Microsoft word</option>
-              <option value='ms-excel'>Microsoft excel</option>
-              <option value='robotics'>Robotics</option>
+              <option value='ms-word'>
+                {' '}
+                Fullstack (MERN) Software Development
+              </option>
               <option value='frontend-development'>frontend development</option>
               <option value='backend-development'>backend development</option>
               <option value='fullstack-development'>
@@ -161,6 +177,24 @@ const RegisterForm = () => {
             </select>
           </Styles.SelectBox>
         </Styles.InputBoxWrapper>
+        <textarea
+          name=''
+          id=''
+          placeholder='What do you intend to do?'
+        />
+
+
+
+        <Styles.TermsAndConditions>
+          <div>
+            <input type='checkbox' />
+          </div>
+          <small>
+            If you are selected for this training program, are you ready to pay
+            N350,000 in two installments max?
+          </small>
+        </Styles.TermsAndConditions>
+
         <Styles.TermsAndConditions>
           <div>
             <input type='checkbox' />

@@ -16,7 +16,7 @@ export const Footer = () => {
           <div className='row gy-4'>
             <div className='col-lg-4'>
               <Logo className='loading-text'>
-                <b>Code2ChangeYourWorld</b>
+                <b>EarnBigFromTech</b>
               </Logo>
             </div>
             <div className='col-lg-2'>

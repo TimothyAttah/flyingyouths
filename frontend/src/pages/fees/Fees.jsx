@@ -32,13 +32,13 @@ const Fees = () => {
                   </td>
 
                   <td>
-                    <h3>tuition fee</h3>₦150,000
+                    <h3>tuition fee</h3>₦175,000
                   </td>
                   <td>
                     <h3>payment options</h3>
                     <h4>Payable in two installments.</h4>
                     <p>First session (60%) = ₦100,000</p>
-                    <p>Second session (40%) = ₦50,000</p>
+                    <p>Second session (40%) = ₦75,000</p>
                   </td>
                   <td>
                     <h3>durations</h3>2 months
@@ -50,13 +50,13 @@ const Fees = () => {
                   </td>
 
                   <td>
-                    <h3>tuition fee</h3>₦150,000
+                    <h3>tuition fee</h3>₦175,000
                   </td>
                   <td>
                     <h3>payment options</h3>
                     <h4>Payable in two installments.</h4>
                     <p>First session (60%) = ₦100,000</p>
-                    <p>Second session (40%) = ₦50,000</p>
+                    <p>Second session (40%) = ₦75,000</p>
                   </td>
                   <td>
                     <h3>durations</h3>2 months
@@ -68,7 +68,7 @@ const Fees = () => {
                   </td>
 
                   <td>
-                    <h3>tuition fee</h3>₦300,000
+                    <h3>tuition fee</h3>₦350,000
                   </td>
                   <td>
                     <h3>payment options</h3>

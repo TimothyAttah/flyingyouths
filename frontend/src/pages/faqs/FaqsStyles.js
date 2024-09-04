@@ -98,7 +98,7 @@ export const FaqsContainer = styled.div`
     font-size: 40px;
     text-transform: capitalize;
     font-family: cursive;
-    color: #fff;
+    color: #000;
     text-align: center;
   }
 `;

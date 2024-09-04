@@ -30,23 +30,24 @@ export const WelcomeContentContainer = styled.div`
   h4 {
     padding-bottom: 15px;
     font-size: 26px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     /* color: #fff; */
-    background-image: repeating-linear-gradient(
+    /* background-image: repeating-linear-gradient(
         to right,
         #2d2a44 0 1px,
         transparent 2px 200px
       ),
       repeating-linear-gradient(to bottom, #2d2a44 0 1px, transparent 2px 200px),
-      radial-gradient(at 50% 50%, #2d2a44, #1d1b34);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+      radial-gradient(at 50% 50%, #2d2a44, #1d1b34); */
+      color:#000;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
   }
 
   p {
     margin-bottom: 10px;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 35px;
     background-image: repeating-linear-gradient(
         to right,
         #2d2a44 0 1px,

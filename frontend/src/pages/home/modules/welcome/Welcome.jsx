@@ -7,9 +7,11 @@ import * as Styles from './WelcomeStyles'
 export const Welcome = () => {
   return (
     <Styles.WelcomeContainer>
-      <FadeIn>
+      <FadeIn delay={0.4} direction='right'>
         <Styles.WelcomeContentContainer>
-          <h4>Welcome Address</h4>
+          {/* <h4>Welcome Address</h4> */}
+          <h4>Hear what our students says: Testimony</h4>
+          {/*
           <p>
             You are welcome to Flyingyouths Centre for Open Distance and
             e-Learning. We aim to provide excellent faith-based affordable
@@ -33,12 +35,24 @@ export const Welcome = () => {
             I trust that you will be embrace this initiative of charting a new
             course for leveraging e-learning in delivering a robust and
             transformational education.
+          </p> */}
+
+          <p>
+            "EBT coding bootcamp is more than jus a learning experience- It's a
+            transformative journey into the world of technology. They pride us
+            on offering an immersive, hands-on curriculum that equips our
+            students with skills needed to excel in tech industry. With expert
+            instructors, personalized mentorship, and a focus on real-world
+            applications, they ensure that every participant leaves not only
+            with knowledge but with the confidence to launch a successful
+            career. Join us and be part of a community that fosters innovation,
+            collaboration, and growth."
           </p>
           <br />
           <p>Welcome!</p>
           <Styles.DirectorName>
             <span className='line' />
-            Mr Enoch Louis Omotayo, Director Flyingyouths
+            Mr Enoch Louis Omotayo, Director EarnBigFromTech
           </Styles.DirectorName>
           {/* <small>
             <span className='line' />
@@ -46,7 +60,7 @@ export const Welcome = () => {
           </small> */}
         </Styles.WelcomeContentContainer>
       </FadeIn>
-      <FadeIn>
+      <FadeIn delay={0.4} direction='left'>
         <Styles.WelcomeImgContainer>
           <img src={TeamLeader} alt='' />
         </Styles.WelcomeImgContainer>

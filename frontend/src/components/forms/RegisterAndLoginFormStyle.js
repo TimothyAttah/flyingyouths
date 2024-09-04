@@ -124,7 +124,7 @@ export const SelectBox = styled.div`
     background-color: transparent;
     text-transform: capitalize;
     height: 50px;
-    color: aliceblue;
+    /* color: aliceblue; */
 
     option {
       height: 40px;

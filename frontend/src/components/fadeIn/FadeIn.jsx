@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 const FadeInStyle = styled(motion.div)`
   width: auto;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   padding-left: 0px;
   padding-right: 0px;

@@ -12,21 +12,21 @@ const Contact = () => {
     <div>
       <Transition timeline={contact} />
       <Styles.ContactSection>
-        <FadeIn center='true' delay={0.2} direction='down'>
+        <FadeIn  delay={0.2} direction='down'>
           <Styles.SectionTitle>
             <Styles.Title>contact</Styles.Title>
             <Styles.SubTitle>have any question ?</Styles.SubTitle>
           </Styles.SectionTitle>
         </FadeIn>
         <Styles.ContactSectionWrapper>
-          <FadeIn delay={0.4} direction='right' center='true'>
+          <FadeIn delay={0.4} direction='right' >
             <Styles.ContactInfo>
               <Styles.ContactInfoItem>
                 <Styles.SvgBox>
                   <FaMapMarkerAlt />
                 </Styles.SvgBox>
                 <h3>Address</h3>
-                <p>White House Bus Stop, Odogunyan, Ikorodu, Lagos, Nigeria.</p>
+                <p> 1, Ita-oloja Street, White House Bus Stop, Odogunyan, Ikorodu, Lagos, Nigeria.</p>
               </Styles.ContactInfoItem>
               <Styles.ContactInfoItem>
                 <Styles.SvgBox>
@@ -35,17 +35,17 @@ const Contact = () => {
                 <h3>Call us</h3>
                 <p>+2348038724054</p>
               </Styles.ContactInfoItem>
-              <Styles.ContactInfoItem>
+              {/* <Styles.ContactInfoItem>
                 <Styles.SvgBox>
                   <FaEnvelope />
                 </Styles.SvgBox>
                 <h3>Email us</h3>
-                <p>enochlouis@gmail.com</p>
-              </Styles.ContactInfoItem>
+                <p>enochlouis1@gmail.com</p>
+              </Styles.ContactInfoItem> */}
             </Styles.ContactInfo>
           </FadeIn>
           <Styles.ContactForm>
-            <FadeIn delay={0.4} direction='left' center='true' fullWidth='true'>
+            <FadeIn delay={0.4} direction='left' fullWidth='true'>
               <form>
                 <Styles.InputBox>
                   <input type='text' placeholder='Name' required />

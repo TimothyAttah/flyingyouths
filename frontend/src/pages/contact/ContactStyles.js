@@ -7,10 +7,10 @@ export const ContactSection = styled.section`
 
 export const SectionTitle = styled.div`
   text-align: center;
-  margin-bottom: 45px;
+  /* margin-bottom: 45px; */
   font-size: 20px;
   text-transform: capitalize;
-  margin: 0 0 15px;
+  /* margin: 0 0 15px; */
 `;
 export const Title = styled.span`
   display: inline-block;
@@ -19,11 +19,11 @@ export const Title = styled.span`
   font-weight: 400;
   text-transform: capitalize;
   /* color: ${theme.color.textColor2}; */
-  --to: left;
+  /* --to: left;
   background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
   color: #fff;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   margin: 0 0 12px;
   padding: 0 40px;
   position: relative;
@@ -34,15 +34,16 @@ export const Title = styled.span`
     position: absolute;
     height: 1px;
     width: 34px;
-    background-color: white;
+    /* background-color: white; */
     /* background-color: ${theme.color.textColor2}; */
-    --to: right;
+    /* --to: right;
     background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
-    color: #fff;
+    color: #fff; */
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
     top: 50%;
     transform: translateY(-50%);
+    background-color:#000;
   }
 
   ::before {
@@ -56,7 +57,7 @@ export const SubTitle = styled.h2`
   font-size: 35px;
   text-transform: capitalize;
   margin-bottom: 80px;
-  color: #fff;
+  color: #000;
 `;
 
 export const ContactSectionWrapper = styled.div`
@@ -109,9 +110,12 @@ export const SvgBox = styled.div`
   position: absolute;
   left: 0;
   top: 20px;
-  --to: bottom;
+  /* --to: bottom;
   background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
-  color: #000;
+  color: #000; */
+  background-color: #0d6ade;
+  background-color: #040018;
+  color: #fff;
 `;
 export const ContactForm = styled.div`
   width: 500px;
@@ -124,7 +128,8 @@ export const ContactForm = styled.div`
 
 export const InputBox = styled.div`
   margin-bottom: 20px;
-
+  /* border: 2px solid red; */
+  /*  */
   input,
   textarea {
     width: 100%;
@@ -135,7 +140,7 @@ export const InputBox = styled.div`
     font-family: inherit;
     font-weight: inherit;
     font-size: inherit;
-    color: ${theme.color.textColor};
+    color: #040018;
     padding: 0 20px;
 
     :focus {
@@ -143,7 +148,7 @@ export const InputBox = styled.div`
     }
 
     ::placeholder {
-      color: #89a5df;
+      color: #040018;
     }
   }
   textarea {
@@ -157,11 +162,12 @@ export const InputBox = styled.div`
 export const BtnWrap = styled.div`
   button {
     all: unset;
-    border: 1px solid #afaeae55;
+    /* border: 1px solid #afaeae55; */
     padding: 10px 20px;
     border-radius: 20px;
-    background-image: linear-gradient(to bottom, #eee1, transparent, #eee1);
+    /* background-image: linear-gradient(to bottom, #eee1, transparent, #eee1); */
     transition: 0.5s;
+    background-color: #040018;
     color: #fff;
 
     :hover {
