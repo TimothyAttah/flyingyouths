@@ -10,12 +10,16 @@ export const navData = [
   //   path: '/courses',
   // },
   {
+    navName: 'Home',
+    path: '/',
+  },
+  {
     navName: 'About',
     path: '/about_us',
   },
   {
-    navName: 'Tuition & Fees',
-    path: '/fees',
+    navName: 'Programs',
+    path: '/programs',
   },
   {
     navName: 'FAQS',

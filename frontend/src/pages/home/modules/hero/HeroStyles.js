@@ -111,3 +111,71 @@ export const HeroButton = styled.div`
     }
   }
 `;
+
+export const AboutUsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 80px;
+`;
+export const AboutUsPixContainer = styled.div`
+  width: 500px;
+  display: flex;
+  /* align-items: center; */
+`;
+
+
+export const AboutUsPixItemContainer = styled.div`
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+`;
+
+export const AboutUsPixItem = styled.div`
+  width: 250px;
+  height: 200px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+
+export const AboutUsInfoContainer = styled.div`
+  width: 500px;
+
+  h2 {
+    color: blue;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  p {
+    color:#555;
+    font-size: 18px;
+  }
+
+  a {
+    display: block;
+    width: 150px;
+    border: 2px solid blue;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 18px;
+
+  }
+`;

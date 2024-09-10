@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FadeIn } from '../../../../components/fadeIn/FadeIn';
 import * as Styles from './HeroStyles'
+import student1 from '../../../../assets/student1.png'
+import student2 from '../../../../assets/student8.png';
+import student3 from '../../../../assets/student9.png';
+
 
 export const Hero = () => {
   return (
@@ -37,6 +41,29 @@ export const Hero = () => {
           </Link>
         </Styles.HeroButton>
       </FadeIn>
+
+      <Styles.AboutUsContainer>
+        <Styles.AboutUsPixContainer>
+          <Styles.AboutUsPixItemContainer>
+            <img src={student3} alt='' />
+          </Styles.AboutUsPixItemContainer>
+          <Styles.AboutUsPixItemContainer>
+            <Styles.AboutUsPixItem>
+              <img src={student1} alt='' />
+            </Styles.AboutUsPixItem>
+            <Styles.AboutUsPixItem>
+              <img src={student2} alt='' />
+            </Styles.AboutUsPixItem>
+          </Styles.AboutUsPixItemContainer>
+        </Styles.AboutUsPixContainer>
+        <Styles.AboutUsInfoContainer>
+          <h2> Design your future today</h2>
+          <p>EarnBigFromTech improves the economic outcomes of individuals by equipping them with premium technology skills, business skills and life skills.</p>
+          <Link to='/about_us'>
+            About us
+          </Link>
+        </Styles.AboutUsInfoContainer>
+      </Styles.AboutUsContainer>
     </Styles.HeroContainer>
   );
 };

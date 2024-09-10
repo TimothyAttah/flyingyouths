@@ -38,7 +38,7 @@ export const Welcome = () => {
           </p> */}
 
           <p>
-            "EBT coding bootcamp is more than jus a learning experience- It's a
+            "EBT coding bootcamp is more than just a learning experience- It's a
             transformative journey into the world of technology. They pride us
             on offering an immersive, hands-on curriculum that equips our
             students with skills needed to excel in tech industry. With expert
@@ -54,10 +54,6 @@ export const Welcome = () => {
             <span className='line' />
             Mr Enoch Louis Omotayo, Director EarnBigFromTech
           </Styles.DirectorName>
-          {/* <small>
-            <span className='line' />
-            <p>Mr Enoch Louis Omotayo, Director Flyingyouths</p>
-          </small> */}
         </Styles.WelcomeContentContainer>
       </FadeIn>
       <FadeIn delay={0.4} direction='left'>

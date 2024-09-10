@@ -177,13 +177,7 @@ const RegisterForm = () => {
             </select>
           </Styles.SelectBox>
         </Styles.InputBoxWrapper>
-        <textarea
-          name=''
-          id=''
-          placeholder='What do you intend to do?'
-        />
-
-
+        <textarea name='' id='' placeholder='What do you intend to do?' />
 
         <Styles.TermsAndConditions>
           <div>
@@ -194,6 +188,83 @@ const RegisterForm = () => {
             N350,000 in two installments max?
           </small>
         </Styles.TermsAndConditions>
+
+        <div>
+          <h4>What course are you enrolling for?</h4>
+          <div>
+            <input type='radio' name='course' id='product-design' />
+            <label htmlFor='product-design'>Product Design</label>
+          </div>
+          <div>
+            <input type='radio' name='course' id='product-management' />
+            <label htmlFor='product-management'>Product Management</label>
+          </div>
+        </div>
+
+        <div>
+          <h4>Which of these options applies to you?</h4>
+          <div>
+            <input type='radio' name='status' id='student' />
+            <label htmlFor='student'>Currently a student</label>
+          </div>
+          <div>
+            <input type='radio' name='status' id='employed' />
+            <label htmlFor='employed'>Employed</label>
+          </div>
+          <div>
+            <input type='radio' name='status' id='unemployed' />
+            <label htmlFor='unemployed'>Unemployed</label>
+          </div>
+          <div>
+            <input type='radio' name='status' id='self-employed' />
+            <label htmlFor='self-employed'>Self-Employed</label>
+          </div>
+          <div>
+            <input type='radio' name='status' id='serving' />
+            <label htmlFor='serving'> I am Currently Serving</label>
+          </div>
+        </div>
+
+        <div>
+          <h4>What's your preferred tuition payment option?</h4>
+          <div>
+            <input type='radio' name='payment' id='early-payment' />
+            <label htmlFor='early-payment'>
+              Early bid registration - N300,000 (ends 20/09/2024)
+            </label>
+          </div>
+          <div>
+            <input type='radio' name='payment' id='once-payment' />
+            <label htmlFor='once-payment'>One time payment - N300,000</label>
+          </div>
+          <div>
+            <input type='radio' name='payment' id='installments-payment' />
+            <label htmlFor='installments-payment'>
+              Pay in installments - N350,000 (Pay N200,000 for start and
+              N150,000 balance at week 3 of the program)
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <h4>How did you hear about this program?</h4>
+          <div>
+            <input type='checkbox' name='source' id='social-media' />
+            <label htmlFor='social-media'>Social Media</label>
+          </div>
+          <div>
+            <input type='checkbox' name='source' id='friend-family' />
+            <label htmlFor='friend-family'>Friends / Family</label>
+          </div>
+          <div>
+            <input type='checkbox' name='source' id='email' />
+            <label htmlFor='email'>Email</label>
+          </div>
+          <div>
+            <input type='checkbox' name='source' id='other' />
+            <label htmlFor='other'>Other</label>
+          </div>
+        </div>
 
         <Styles.TermsAndConditions>
           <div>

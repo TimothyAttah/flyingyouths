@@ -8,6 +8,7 @@ import Faqs from './pages/faqs/Faqs';
 import Fees from './pages/fees/Fees';
 import Contact from './pages/contact/Contact';
 import RegisterAndLogin from './pages/registerAndLogin/RegisterAndLogin';
+import Programs from './pages/programs/Programs';
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/about_us' element={<About />} />
           <Route path='/faqs' element={<Faqs />} />
-          <Route path='/fees' element={<Fees />} />
+          <Route path='/programs' element={<Programs />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/students/register' element={<RegisterAndLogin />} />
         </Route>
