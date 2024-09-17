@@ -31,11 +31,11 @@ const TransparentHeader = () => {
           </Link>
         </Styles.HeaderLogo>
         <Nav setShowSidebar={setShowSidebar} />
-        <div>
+        {/* <div>
           <Link to='/online-tutorials'>
             <button>Online academy</button>
           </Link>
-        </div>
+        </div> */}
         {/* <Styles.HeaderButtonBox>
           <Link to='/students/register'>
             <Styles.HeaderButton>Register</Styles.HeaderButton>

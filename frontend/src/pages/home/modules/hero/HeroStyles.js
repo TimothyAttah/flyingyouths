@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
   padding: 20px;
-  padding-top: 150px;
+  padding-top: 100px;
   h1 {
     text-align: center;
     --to: left;
@@ -15,7 +15,9 @@ export const HeroContainer = styled.div`
     color:#333;
     line-height: 3.5rem;
     padding-bottom: 5px;
+    margin-top: 20px;
   }
+
   h1.right {
     --to: right;
     padding-bottom: 20px;
@@ -82,7 +84,7 @@ export const HeroButton = styled.div`
   /* padding: 10px 20px; */
   /* background-image: linear-gradient(to bottom, #eee1, transparent, #eee1); */
   transition: 0.5s;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 12px;
   border: none;
 
@@ -112,12 +114,30 @@ export const HeroButton = styled.div`
   }
 `;
 
+export const HeroImageContainer = styled.div`
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  display: none;
+
+  img {
+    width: 100%;
+  }
+  @media screen and (max-width: 570px) {
+    display: flex;
+  }
+`;
+
 export const AboutUsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 `;
 export const AboutUsPixContainer = styled.div`
   width: 500px;

@@ -30,7 +30,7 @@ const Footer2 = () => {
             </ul>
           </Styles.FooterDetailsPagesContainer>
         </FadeIn>
-        <FadeIn delay={0.3} direction='up'>
+        {/* <FadeIn delay={0.3} direction='up'>
           <Styles.FooterDetailsFormContainer>
             <h4>Join our list!</h4>
             <p>
@@ -55,7 +55,7 @@ const Footer2 = () => {
               <button>Get Started</button>
             </form>
           </Styles.FooterDetailsFormContainer>
-        </FadeIn>
+        </FadeIn> */}
       </Styles.FooterDetailsMainContainer>
       <Styles.FooterDetailsContainer>
         <h4> &copy;2024. EarnBigFromTech. All Rights Reserved.</h4>

@@ -105,3 +105,24 @@ export const WelcomeImgContainer = styled.div`
     transition: 5s ease all;
   }
 `;
+
+export const DivBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+`;
+
+export const TestimonyPicBox = styled.div`
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+
+  img {
+    width: 100%;
+  }
+`;

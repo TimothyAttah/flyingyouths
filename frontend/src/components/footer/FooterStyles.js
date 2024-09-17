@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
   margin-top: 50px;
+  background-color: #333;
+  color:#fff;
+
+  h2, h4, p, a {
+    color:#fff;
+  }
 `;
 
 export const FooterDetailsMainContainer = styled.div`
@@ -10,6 +16,7 @@ export const FooterDetailsMainContainer = styled.div`
   justify-content: space-between;
   margin-bottom: 20px;
   padding: 10px;
+  color: #fff;
 
   @media screen and (max-width: 700px) {
     flex-direction: column;
@@ -20,6 +27,7 @@ export const FooterDetailsMainContainer = styled.div`
 `;
 export const FooterDetailsInfoContainer = styled.div`
   width: 300px;
+  color: #fff;
 
   @media screen and (max-width: 950px) {
     width: 250px;
@@ -80,12 +88,17 @@ export const FooterDetailsFormContainer = styled.div`
 
   form {
     width: 100%;
+    label {
+      color:#fff;
+    }
 
     button {
       background-color: #333;
       height: 40px;
       width: 100%;
       border-radius: 10px;
+      background-color: transparent;
+      border: 1px solid #fff;
       color: #fff;
     }
   }
