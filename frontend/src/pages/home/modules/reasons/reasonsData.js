@@ -17,7 +17,7 @@ export const reasonsData = [
   {
     icon: FaAddressBook,
     title: 'Career Mentorship',
-    reason: `Ewe are concern with the future of our students after training to give them proper guidance for them to grow and become big in tech.`,
+    reason: `We are concern with the future of our students after training to give them proper guidance for them to grow and become big in tech.`,
   },
   {
     icon: FaAddressBook,

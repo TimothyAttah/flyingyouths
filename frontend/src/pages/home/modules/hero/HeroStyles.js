@@ -122,14 +122,15 @@ export const HeroImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  display: none;
+  /* display: none; */
+  margin-top: 30px;
 
   img {
     width: 100%;
-  }
+  /* }
   @media screen and (max-width: 570px) {
     display: flex;
-  }
+  } */
 `;
 
 export const AboutUsContainer = styled.div`
