@@ -164,3 +164,75 @@ export const Button = styled.button`
   border-radius: 10px;
   font-size: 20px;
 `;
+
+export const HeroButton = styled.div`
+  all: unset;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #afaeae55; */
+  /* padding: 10px 20px; */
+  /* background-image: linear-gradient(to bottom, #eee1, transparent, #eee1); */
+  transition: 0.5s;
+  margin: 0 auto;
+  margin-top: 12px;
+  border: none;
+
+  a,
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    background-color: #0d6efd;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s;
+
+    :hover {
+      background-color: #c691e6;
+      background-color: #0d6ade;
+      background-color: #333;
+
+      /* color: #040018; */
+      /* box-shadow: 0 0 50px #c691e6; */
+    }
+  }
+`;
+
+export const CheckboxWrapper = styled.div`
+  display: flex;
+  /* flex-direction: row-reverse; */
+  width: 300px;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+
+  align-items: center;
+  label,
+  input {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  input {
+    display: block;
+    width: 40px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  label {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+  }
+`;

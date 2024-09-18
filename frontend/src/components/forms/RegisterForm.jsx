@@ -88,7 +88,7 @@ const RegisterForm = () => {
             <span>
               <FaCalendar />
             </span>
-            <input type='date' placeholder='date of birth' />
+            <input type='text' placeholder='date of birth' />
           </Styles.InputBox>
         </Styles.InputBoxWrapper>
 
@@ -132,33 +132,70 @@ const RegisterForm = () => {
           </small>
         </Styles.PasswordInputBox> */}
 
-        <p>State of residence: which is a select box</p>
-
         <Styles.SelectBox>
-          <select name='program' id='program'>
+          <select name='states' id='states'>
             <option value=''>State of residence</option>
-            <option value='ms-word'>Microsoft word</option>
-            <option value='ms-excel'>Microsoft excel</option>
-            <option value='robotics'>Robotics</option>
-            <option value='frontend-development'>frontend development</option>
-            <option value='backend-development'>backend development</option>
-            <option value='fullstack-development'>fullstack development</option>
+            <option value='Abia'>Abia</option>
+            <option value='Adamawa'>Adamawa</option>
+            <option value='Akwa Ibom'>Akwa Ibom</option>
+            <option value='Anambra'>Anambra</option>
+            <option value='Bauchi'>Bauchi</option>
+            <option value='Bayelsa'>Bayelsa</option>
+            <option value='Benue'>Benue</option>
+            <option value='Borno'>Borno</option>
+            <option value='Cross River'>Cross River</option>
+            <option value='Delta'>Delta</option>
+            <option value='Ebonyi'>Ebonyi</option>
+            <option value='Edo'>Edo</option>
+            <option value='Ekiti'>Ekiti</option>
+            <option value='Enugu'>Enugu</option>
+            <option value='Gombe'>Gombe</option>
+            <option value='Imo'>Imo</option>
+            <option value='Jigawa'>Jigawa</option>
+            <option value='Kaduna'>Kaduna</option>
+            <option value='Kano'>Kano</option>
+            <option value='Katsina'>Katsina</option>
+            <option value='Kebbi'>Kebbi</option>
+            <option value='Kogi'>Kogi</option>
+            <option value='Kwara'>Kwara</option>
+            <option value='Lagos'>Lagos</option>
+            <option value='Nasarawa'>Nasarawa</option>
+            <option value='Niger'>Niger</option>
+            <option value='Ogun'>Ogun</option>
+            <option value='Ondo'>Ondo</option>
+            <option value='Osun'>Osun</option>
+            <option value='Oyo'>Oyo</option>
+            <option value='Plateau'>Plateau</option>
+            <option value='Rivers'>Rivers</option>
+            <option value='Sokoto'>Sokoto</option>
+            <option value='Taraba'>Taraba</option>
+            <option value='Yobe'>Yobe</option>
+            <option value='Zamfara'>Zamfara</option>
+            <option value='FCT'>FCT</option>
           </select>
         </Styles.SelectBox>
 
         <Styles.InputBoxWrapper>
           <Styles.SelectBox>
-            <select name='program' id='program'>
-              <option value=''>select program</option>
-              <option value='ms-word'>
-                {' '}
-                Fullstack (MERN) Software Development
+            <select id='tech-skills' name='tech-skills'>
+              <option value=''>Select a Tech Course:</option>
+              <option value='Web Development'>Web Development</option>
+              <option value='App Development'>App Development</option>
+              <option value='Graphic Design'>Graphic Design</option>
+              <option value='Video Editing'>Video Editing</option>
+              <option value='Digital Marketing'>Digital Marketing</option>
+              <option value='Game Development'>Game Development</option>
+              <option value='Cybersecurity'>Cybersecurity</option>
+              <option value='3D Modeling and Animation'>
+                3D Modeling and Animation
               </option>
-              <option value='frontend-development'>frontend development</option>
-              <option value='backend-development'>backend development</option>
-              <option value='fullstack-development'>
-                fullstack development
+              <option value='Artificial Intelligence (AI) and Machine Learning'>
+                Artificial Intelligence (AI) and Machine Learning
               </option>
+              <option value='Blockchain Development'>
+                Blockchain Development
+              </option>
+              <option value='Content Creation'>Content Creation</option>
             </select>
           </Styles.SelectBox>
           <Styles.SelectBox>
@@ -177,19 +214,30 @@ const RegisterForm = () => {
             </select>
           </Styles.SelectBox>
         </Styles.InputBoxWrapper>
-        <textarea name='' id='' placeholder='What do you intend to do?' />
+        <textarea
+          name=''
+          id=''
+          placeholder='What do you intend to do?'
+          style={{
+            border: '1px solid #333',
+            width: '100%',
+            height: '250px ',
+            padding: '10px',
+            borderRadius: '10px',
+          }}
+        />
 
         <Styles.TermsAndConditions>
           <div>
             <input type='checkbox' />
           </div>
-          <small>
-            If you are selected for this training program, are you ready to pay
-            N350,000 in two installments max?
-          </small>
+          <h5>
+            If you are selected, are you ready to pay 80% of your tuition fee to
+            secure your slot for this course and get N50,000 discount?
+          </h5>
         </Styles.TermsAndConditions>
 
-        <div>
+        {/* <div>
           <h4>What course are you enrolling for?</h4>
           <div>
             <input type='radio' name='course' id='product-design' />
@@ -199,9 +247,9 @@ const RegisterForm = () => {
             <input type='radio' name='course' id='product-management' />
             <label htmlFor='product-management'>Product Management</label>
           </div>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <h4>Which of these options applies to you?</h4>
           <div>
             <input type='radio' name='status' id='student' />
@@ -223,9 +271,9 @@ const RegisterForm = () => {
             <input type='radio' name='status' id='serving' />
             <label htmlFor='serving'> I am Currently Serving</label>
           </div>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <h4>What's your preferred tuition payment option?</h4>
           <div>
             <input type='radio' name='payment' id='early-payment' />
@@ -244,26 +292,26 @@ const RegisterForm = () => {
               N150,000 balance at week 3 of the program)
             </label>
           </div>
-        </div>
+        </div> */}
 
-        <div>
+        <div style={{ margin: '40px 0' }}>
           <h4>How did you hear about this program?</h4>
-          <div>
-            <input type='checkbox' name='source' id='social-media' />
+          <Styles.CheckboxWrapper>
             <label htmlFor='social-media'>Social Media</label>
-          </div>
-          <div>
-            <input type='checkbox' name='source' id='friend-family' />
+            <input type='checkbox' name='source' id='social-media' />
+          </Styles.CheckboxWrapper>
+          <Styles.CheckboxWrapper>
             <label htmlFor='friend-family'>Friends / Family</label>
-          </div>
-          <div>
-            <input type='checkbox' name='source' id='email' />
+            <input type='checkbox' name='source' id='friend-family' />
+          </Styles.CheckboxWrapper>
+          <Styles.CheckboxWrapper>
             <label htmlFor='email'>Email</label>
-          </div>
-          <div>
-            <input type='checkbox' name='source' id='other' />
+            <input type='checkbox' name='source' id='email' />
+          </Styles.CheckboxWrapper>
+          <Styles.CheckboxWrapper>
             <label htmlFor='other'>Other</label>
-          </div>
+            <input type='checkbox' name='source' id='other' />
+          </Styles.CheckboxWrapper>
         </div>
 
         <Styles.TermsAndConditions>
@@ -271,9 +319,13 @@ const RegisterForm = () => {
             <input type='checkbox' />
           </div>
           <small>
-            I agree to the <Link>terms and conditions</Link> listed.
+            I agree to the <Link>terms and conditions.</Link>
           </small>
         </Styles.TermsAndConditions>
+
+        <Styles.HeroButton>
+          <button>Submit</button>
+        </Styles.HeroButton>
       </form>
     </>
   );

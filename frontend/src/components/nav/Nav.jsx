@@ -19,7 +19,7 @@ export const navData = [
   },
   {
     navName: 'Programs',
-    path: '/programs',
+    path: '#programs',
   },
   {
     navName: 'FAQS',

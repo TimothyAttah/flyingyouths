@@ -14,6 +14,8 @@ export const Hero = () => {
         <div>
           <img src={heroBg} alt='' />
         </div>
+
+        <div></div>
         <FadeIn delay={0.4} direction='down'>
           <h1>
             {/* Welcome to EarnBigFromTech centre for open distance and e-Learning */}
@@ -23,9 +25,11 @@ export const Hero = () => {
         </FadeIn>
 
         <FadeIn delay={0.5} direction='down'>
-          <h1 className='right'>
+          <h1 className='right' >
             {/* Choosing the Right Education Level for Your Future Success */}
-            we offer training in tech skills.
+             Unlock Your Future with In-Demand
+            Tech Skills! Join Our Expert-Led Classes and Start Earning Big.
+            Enroll Now for Physical Training at Odogunyan, Ikorodu, Lagos State!
           </h1>
         </FadeIn>
 

@@ -38,6 +38,7 @@ export const TestimonyWrapper = styled.div`
   h2 {
     text-align: center;
     color: #0d6efd;
+    color: #040018;
     margin-bottom: 20px;
   }
 `;
@@ -107,6 +108,7 @@ export const HeroButton = styled.div`
 
 export const EnrollWrapper = styled.div`
   background-color: #040018;
+  background-color:#333;
   color:#fff;
   text-align: center;
   padding: 20px;

@@ -45,6 +45,23 @@ export const HeroContainer = styled.div`
   }
 `;
 
+export const HeroBgPic = styled.div`
+  width: 100%;
+  height: 150px;
+  background-color: blue;
+  position: relative;
+`;
+
+export const HeroBgWhite = styled.div`
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+`;
+
 export const HeroSubTitle = styled.p`
   /* display: flex;
   align-items: center;
@@ -124,7 +141,7 @@ export const HeroImageContainer = styled.div`
   font-weight: bold;
   /* display: none; */
   margin-top: 30px;
-/* 
+/*
   img {
     width: 100%;
   }
