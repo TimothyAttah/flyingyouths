@@ -19,7 +19,11 @@ export const navData = [
   },
   {
     navName: 'Programs',
-    path: '#programs',
+    path: '/programs',
+  },
+  {
+    navName: 'Tech Skills',
+    path: '/tech-skills',
   },
   {
     navName: 'FAQS',

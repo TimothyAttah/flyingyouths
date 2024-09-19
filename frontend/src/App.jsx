@@ -9,6 +9,7 @@ import Fees from './pages/fees/Fees';
 import Contact from './pages/contact/Contact';
 import RegisterAndLogin from './pages/registerAndLogin/RegisterAndLogin';
 import Programs from './pages/programs/Programs';
+import Tech from './pages/tech/Tech2';
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
           <Route path='/about_us' element={<About />} />
           <Route path='/faqs' element={<Faqs />} />
           <Route path='/programs' element={<Programs />} />
+          <Route path='/tech-skills' element={<Tech />} />
+
           <Route path='/contact' element={<Contact />} />
           <Route path='/students/register' element={<RegisterAndLogin />} />
         </Route>

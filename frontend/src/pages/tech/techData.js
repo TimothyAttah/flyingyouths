@@ -1,4 +1,4 @@
-import webPix from '../../assets/tech-web.jpg'
+import webPix from '../../assets/tech-web.jpg';
 import appPix from '../../assets/tech-app.jpg';
 import graphicPix from '../../assets/tech-graphic.jpg';
 import videoPix from '../../assets/tech-video.jpg';
@@ -10,20 +10,15 @@ import modelingPix from '../../assets/tech-3d.jpg';
 import aiPix from '../../assets/tech-ai.jpg';
 import contentPix from '../../assets/tech-content.jpg';
 
-
-
-
-
-
-export const coursesData = [
+export const techsData = [
   {
-    courseTitle: 'Full-Stack Web Development (MERN)',
-    courseDescription:
+    techTitle: 'Web Development (MERN)',
+    techDescription:
       'The class is 3times weekly We teach front end and Back end which include Html5, Css3, JavaScript, ReactJs, Expressjs, NodeJs, MongoDb all these makes anyone a good full MERN Developer.',
-    coursePic: `${webPix}`,
-    courseFee: '400,000',
-    courseDurations: '4 Months',
-    courseOutlines: [
+    techPic: `${webPix}`,
+    techFee: '₦400,000',
+    techDurations: '4 Months',
+    techOutlines: [
       'Introduction to Web Development (HTML Basics)',
       'Styling Websites with CSS (Layouts, Flexbox, Grid)',
       'JavaScript Basics (DOM Manipulation, Events)',
@@ -41,12 +36,12 @@ export const coursesData = [
       'Bigstack Major Project working on user profile',
       "Building a Server: Build a server with the Express framework. You'll learn how APIs are architected and create and use middleware for expanded functionality.",
     ],
-    // courseOutlineFrontend: {
-    //   courseOutlineTitle: 'Frontend Outline',
+    // techOutlineFrontend: {
+    //   techOutlineTitle: 'Frontend Outline',
     // },
-    // courseOutlineBackend: {
-    //   courseOutlineTitle: 'Backend Outline',
-    //   courseOutlines: [
+    // techOutlineBackend: {
+    //   techOutlineTitle: 'Backend Outline',
+    //   techOutlines: [
     //     'Introduction to Nodejs',
     //     'Learn express',
     //     'Body parser, middleware',
@@ -59,13 +54,13 @@ export const coursesData = [
     // },
   },
   {
-    courseTitle: ' App Development',
-    courseDescription:
+    techTitle: ' App Development',
+    techDescription:
       'Learning mobile app development (using Swift for iOS or Kotlin for Android) is highly marketable, especially with the demand for custom apps.',
-    coursePic: `${appPix}`,
-    courseFee: '500,000',
-    courseDurations: '5 Months',
-    courseOutlines: [
+    techPic: `${appPix}`,
+    techFee: '₦500,000',
+    techDurations: '5 Months',
+    techOutlines: [
       'Introduction to Mobile App Development (iOS vs Android)',
       'Swift Basics (Variables, Control Flow, Functions)',
       'Kotlin Basics (Syntax, Data Types, OOP)',
@@ -80,13 +75,13 @@ export const coursesData = [
     ],
   },
   {
-    courseTitle: ' Graphic Design',
-    courseDescription:
+    techTitle: ' Graphic Design',
+    techDescription:
       'Tools like Adobe Photoshop, Illustrator, or Figma are valuable for design projects, logo creation, or social media content.',
-    coursePic: `${graphicPix}`,
-    courseFee: '350,000',
-    courseDurations: '3 Months',
-    courseOutlines: [
+    techPic: `${graphicPix}`,
+    techFee: '₦350,000',
+    techDurations: '3 Months',
+    techOutlines: [
       'Introduction to Graphic Design (Design Principles, Color Theory)',
       'Adobe Photoshop Basics (Tools, Layers, Effects)',
       'Illustrator and Vector Graphics (Shapes, Typography)',
@@ -97,13 +92,13 @@ export const coursesData = [
     ],
   },
   {
-    courseTitle: 'Video Editing',
-    courseDescription:
+    techTitle: 'Video Editing',
+    techDescription:
       'Learning software like Adobe Premiere Pro or Final Cut Pro allows you to offer video editing services for YouTube channels or social media influencers.',
-    coursePic: `${videoPix}`,
-    courseFee: '350,000',
-    courseDurations: '3 Months',
-    courseOutlines: [
+    techPic: `${videoPix}`,
+    techFee: '₦350,000',
+    techDurations: '3 Months',
+    techOutlines: [
       'Introduction to Video Editing (Understanding the Editing Process)',
       'Adobe Premiere Pro Basics (Cutting, Trimming, Transitions)',
       'Adding Effects and Animations (After Effects Basics)',
@@ -114,13 +109,13 @@ export const coursesData = [
     ],
   },
   {
-    courseTitle: 'Digital Marketing',
-    courseDescription:
+    techTitle: 'Digital Marketing',
+    techDescription:
       "Understanding SEO, content marketing, social media management, and PPC ads can open opportunities for managing businesses' online presence.",
-    coursePic: `${digitalPix}`,
-    courseFee: '350,000',
-    courseDurations: '4 Months',
-    courseOutlines: [
+    techPic: `${digitalPix}`,
+    techFee: '₦350,000',
+    techDurations: '4 Months',
+    techOutlines: [
       'Introduction to Digital Marketing (SEO, Content Marketing, PPC)',
       'Basics of Search Engine Optimization (On-Page, Off-Page, Keywords)',
       'Social Media Marketing (Creating Campaigns, Ads on Facebook/Instagram)',
@@ -132,13 +127,13 @@ export const coursesData = [
     ],
   },
   {
-    courseTitle: 'Game Development',
-    courseDescription:
+    techTitle: 'Game Development',
+    techDescription:
       'Using platforms like Unity or Unreal Engine, you can create and sell your own games or take on freelance game development projects.',
-    coursePic: `${gamePix}`,
-    courseFee: '650,000',
-    courseDurations: '5 Months',
-    courseOutlines: [
+    techPic: `${gamePix}`,
+    techFee: '₦650,000',
+    techDurations: '5 Months',
+    techOutlines: [
       ' Introduction to Game Development (Concepts, Platforms)',
       ' Getting Started with Unity (Interface, Assets, Scene Building)',
       'Physics and Animation in Games',
@@ -151,13 +146,13 @@ export const coursesData = [
     ],
   },
   {
-    courseTitle: 'Blockchain Development',
-    courseDescription:
+    techTitle: 'Blockchain Development',
+    techDescription:
       'With the rise of cryptocurrencies and decentralized applications, we will teach you thoroughly and you can explore blockchain programming to work on projects or startups in this space.',
-    coursePic: `${blockchainPix}`,
-    courseFee: '1,250,000',
-    courseDurations: '5 Months',
-    courseOutlines: [
+    techPic: `${blockchainPix}`,
+    techFee: '₦1,250,000',
+    techDurations: '5 Months',
+    techOutlines: [
       'Introduction to Blockchain Technology',
       ' Blockchain Basics (Decentralization, Cryptography)',
       'Smart Contracts with Solidity',
@@ -172,13 +167,13 @@ export const coursesData = [
     ],
   },
   {
-    courseTitle: 'Cybersecurity',
-    courseDescription:
+    techTitle: 'Cybersecurity',
+    techDescription:
       'With a growing need for security, learning cybersecurity principles can lead to jobs in ethical hacking, penetration testing, or security auditing.',
-    coursePic: `${cybersecurityPix}`,
-    courseFee: '350,000',
-    courseDurations: '3 Months',
-    courseOutlines: [
+    techPic: `${cybersecurityPix}`,
+    techFee: '₦350,000',
+    techDurations: '3 Months',
+    techOutlines: [
       'Introduction to Cybersecurity (Threats, Vulnerabilities)',
       ' Understanding Networks and Web Security',
       'Ethical Hacking Basics (Tools, Penetration Testing)',
@@ -191,13 +186,13 @@ export const coursesData = [
     ],
   },
   {
-    courseTitle: '3D Modeling and Animation',
-    courseDescription:
+    techTitle: '3D Modeling and Animation',
+    techDescription:
       'Learning Blender or Autodesk Maya software will give you opportunity to work in animations, architecture, or game design.',
-    coursePic: `${modelingPix}`,
-    courseFee: '650,000',
-    courseDurations: '5 Months',
-    courseOutlines: [
+    techPic: `${modelingPix}`,
+    techFee: '₦650,000',
+    techDurations: '5 Months',
+    techOutlines: [
       'Introduction to 3D Modeling (Basics of Blender)',
       ' Creating Simple 3D Objects (Shapes, Modifiers)',
       'Advanced Modeling (Organic Shapes, Texturing)',
@@ -212,13 +207,13 @@ export const coursesData = [
     ],
   },
   {
-    courseTitle: 'Artificial Intelligence (AI) and Machine Learning Course ',
-    courseDescription:
+    techTitle: 'Artificial Intelligence (AI) and Machine Learning tech ',
+    techDescription:
       'Explore AI tools, data science, and automation which help you in building innovative solutions or freelance data analysis projects.',
-    coursePic: `${aiPix}`,
-    courseFee: '1,750,000',
-    courseDurations: '6 Months',
-    courseOutlines: [
+    techPic: `${aiPix}`,
+    techFee: '₦1,750,000',
+    techDurations: '6 Months',
+    techOutlines: [
       'Introduction to AI and Machine Learning Concepts',
       ' Python for Machine Learning (Pandas, Numpy)',
       'Data Preprocessing and Cleaning',
@@ -235,13 +230,13 @@ export const coursesData = [
     ],
   },
   {
-    courseTitle: 'Content Creation ',
-    courseDescription:
+    techTitle: 'Content Creation ',
+    techDescription:
       'For those who want to Start a YouTube channel, podcast, or blog on a topic of interest can become a source of income through ad revenue, sponsorships, and affiliate marketing.',
-    coursePic: `${contentPix}`,
-    courseFee: '320,000',
-    courseDurations: '6 Months',
-    courseOutlines: [
+    techPic: `${contentPix}`,
+    techFee: '₦320,000',
+    techDurations: '6 Months',
+    techOutlines: [
       'Introduction to Content Creation (Platforms, Niche Selection)',
       ' Creating Engaging Videos (Scripting, Filming, Editing)',
       'Building an Audience (SEO for YouTube, Social Media Strategy)',

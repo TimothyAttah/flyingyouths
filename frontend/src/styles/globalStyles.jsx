@@ -37,6 +37,16 @@ export const GlobalStyle = createGlobalStyle`
       font-family: "Roboto", sans-serif;
 
     ${'' /* border: 2px solid red; */}
+
+      ::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px !important;
+    background-color: #cacaca !important;
+  }
   }
 
      * {
