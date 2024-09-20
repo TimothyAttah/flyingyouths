@@ -5,7 +5,7 @@ import * as Styles from './HeroStyles';
 import student1 from '../../../../assets/student1.png';
 import student2 from '../../../../assets/student8.png';
 import student3 from '../../../../assets/pix1.png';
-import heroBg from '../../../../assets/heroBg.png';
+import heroBg from '../../../../assets/heroPix33.png';
 
 export const Hero = () => {
   return (
