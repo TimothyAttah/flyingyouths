@@ -6,25 +6,26 @@ export const SideBar = styled(motion.div)`
   position: absolute;
   right: 0;
   top: 0;
-  width: 260px;
+  width: 240px;
   height: 100vh;
   background: white;
-  color: #000;
-  --to: top;
-  background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
+  /* --to: top;
+  background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191); */
   padding: 10px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
   z-index: 1144;
+  background-color: #0d6efd;
+  color: #fff;
 `;
 
 export const SideBarNavLinks = styled.ul`
   display: flex;
   flex-direction: column;
-  color: #000;
   margin-top: 80px;
   gap: 20px;
+  padding-right: 30px;
 
   a.active {
     /* background: rgba(255, 255, 255, 0.05); */
@@ -33,18 +34,21 @@ export const SideBarNavLinks = styled.ul`
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 30px;
+    text-align: center;
+    justify-content: center;
   }
 
   li a {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     cursor: pointer;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     border-radius: 5px;
     font-size: 20px;
     text-transform: uppercase;
-    color: #000;
+    color: #fff;
     transition: 0.3s ease-in-out all;
 
     span:first-child {
@@ -62,7 +66,7 @@ export const CloseSideBarIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
+  color: #fff;
   font-size: 20px;
 
   svg {

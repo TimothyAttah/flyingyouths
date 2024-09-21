@@ -17,10 +17,10 @@ export const navData = [
     navName: 'About',
     path: '/about_us',
   },
-  {
-    navName: 'Programs',
-    path: '/programs',
-  },
+  // {
+  //   navName: 'Programs',
+  //   path: '/programs',
+  // },
   {
     navName: 'Tech Skills',
     path: '/tech-skills',

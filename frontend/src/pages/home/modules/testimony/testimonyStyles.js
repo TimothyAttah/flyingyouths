@@ -17,6 +17,7 @@ export const ReasonsListsContainer = styled.div`
   justify-content: space-between;
   margin: auto;
   gap: 20px;
+  padding: 20px;
 `;
 export const ReasonsList = styled.div`
   width: 400px;
@@ -107,17 +108,35 @@ export const HeroButton = styled.div`
 `;
 
 export const EnrollWrapper = styled.div`
-  background-color: #040018;
-  background-color:#333;
+  width: 100%;
+  background-color: #333;
   color:#fff;
-  text-align: center;
   padding: 20px;
+  text-align: center;
 
   h2 {
+    text-transform: capitalize;
     color:#fff;
   }
 `;
 
 export const EnrollButtonWrapper = styled.div`
+  max-width: 500px;
+  margin: auto;
   display: flex;
+  align-items: center;
+  gap:20px;
+  flex-wrap: wrap;
+`;
+
+
+export const ApplyNowContainer = styled.div`
+  width: 100%;
+  background-color:#333;
+  padding: 20px;
+  text-align: center;
+  h2 {
+    text-transform: capitalize;
+
+  }
 `;

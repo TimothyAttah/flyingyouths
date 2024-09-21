@@ -55,9 +55,9 @@ export const MainHeaderContainer = styled.div`
   max-width: 1500px;
   width: 100%;
   top: 0;
-  height: 80px;
+  height: 70px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   z-index: 999;

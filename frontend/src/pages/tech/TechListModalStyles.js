@@ -16,6 +16,7 @@ export const TechListModalContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    margin-top: 100px;
   }
 
   @media screen and (min-width: 1281px) {
@@ -42,6 +43,7 @@ export const TechListModalImg = styled.div`
 
   @media only screen {
     width: 100%;
+    margin-top: 50px;
   }
 
   @media screen and (min-width: 1281px){
@@ -84,9 +86,26 @@ export const TechListModalBox = styled.div`
 
 export const TechListModalTitle = styled.h2`
   font-size: 3rem;
+
+  @media only screen {
+   font-size: 2rem;
+   text-align: center;
+  }
+
+  /* @media screen and (min-width: 1281px) {
+    width: calc(30% -10px);
+    height: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  } */
 `;
 export const TechListModalDesc = styled.p`
   font-size: 20px;
+  @media only screen {
+    font-size: 1rem;
+    text-align: center;
+  }
 `;
 export const TechListModalPrice = styled.span`
   font-size: 2rem;
@@ -109,7 +128,7 @@ export const TechListModalCloseButton = styled.button`
   position: absolute;
   width: 40px;
   height: 40px;
-  font-size: 30px;
+  font-size: 20px;
 
   @media only screen {
    right: -10px;

@@ -36,6 +36,37 @@ const showAnimation = {
   },
 };
 
+export const navData2 = [
+  // {
+  //   navName: 'Courses',
+  //   path: '/courses',
+  // },
+  {
+    navName: 'Home',
+    path: '/',
+  },
+  {
+    navName: 'About',
+    path: '/about_us',
+  },
+  // {
+  //   navName: 'Programs',
+  //   path: '/programs',
+  // },
+  {
+    navName: 'Tech Skills',
+    path: '/tech-skills',
+  },
+  {
+    navName: 'FAQS',
+    path: '/faqs',
+  },
+  {
+    navName: 'Contact',
+    path: '/contact',
+  },
+];
+
 const navData = [
   {
     navName: 'Courses',
@@ -84,7 +115,7 @@ export const SideBar = ({ setShowSidebar }) => {
         </Styles.CloseSideBarIcon>
 
         <Styles.SideBarNavLinks>
-          {navData.map((item, i) => (
+          {navData2.map((item, i) => (
             <li>
               <NavLink
                 to={item.path}
@@ -98,7 +129,7 @@ export const SideBar = ({ setShowSidebar }) => {
             </li>
           ))}
         </Styles.SideBarNavLinks>
-        {user && <Styles.LogoutBtn>Logout</Styles.LogoutBtn>}
+        {/* {user && <Styles.LogoutBtn>Logout</Styles.LogoutBtn>} */}
       </Styles.SideBar>
     </>
   );
