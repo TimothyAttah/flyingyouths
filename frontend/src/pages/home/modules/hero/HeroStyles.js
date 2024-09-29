@@ -3,16 +3,16 @@ import styled from 'styled-components';
 export const HeroContainer = styled.div`
   padding: 20px;
   padding-top: 100px;
+  /* font-family: 'Merriweather Sans', sans-serif; */
+  font-family: 'Merriweather', serif;
   h1 {
     text-align: center;
     --to: left;
     font-size: 3rem;
     font-weight: bold;
-    /* background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    /* text-transform: uppercase; */
-    color:#333;
+    color: #333;
+    color:#111;
+    color:#040018;
     line-height: 3.5rem;
     padding-bottom: 5px;
     margin-top: 20px;
@@ -67,7 +67,10 @@ export const HeroSubTitle = styled.p`
   align-items: center;
   justify-content: center; */
   text-align: center;
-  color: #333;
+  color: #111;
+  color: #040018;
+  font-family: 'Merriweather', serif;
+
   font-size: 1.4rem;
 
   /* span {
@@ -97,9 +100,6 @@ export const HeroButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid #afaeae55; */
-  /* padding: 10px 20px; */
-  /* background-image: linear-gradient(to bottom, #eee1, transparent, #eee1); */
   transition: 0.5s;
   margin: 0 auto;
   margin-top: 12px;
@@ -124,6 +124,7 @@ export const HeroButton = styled.div`
       background-color: #c691e6;
       background-color: #0d6ade;
       background-color: #333;
+      background-color: #1c4edf;
 
       /* color: #040018; */
       /* box-shadow: 0 0 50px #c691e6; */

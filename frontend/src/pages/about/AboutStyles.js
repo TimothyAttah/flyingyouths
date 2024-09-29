@@ -44,6 +44,7 @@ export const AboutImgContent = styled.div`
     margin: 0 auto;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Corinthia', cursive;
   }
 
   h1 {
@@ -56,18 +57,20 @@ export const AboutImgContent = styled.div`
     text-transform: uppercase;
     line-height: 3.5rem;
     padding-bottom: 5px;
+    font-family: 'Corinthia', cursive;
+    /* font-weight: bold; */
   }
 
   p {
     font-size: 20px;
     color: #e8e191;
     font-weight: bold;
+    font-family: 'Lato', sans-serif;
   }
 
   @media screen and (max-width: 600px) {
     h1 {
       font-size: 2.5rem;
-
       line-height: 2.5rem;
       padding-bottom: 5px;
     }

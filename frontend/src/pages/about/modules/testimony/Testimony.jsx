@@ -1,6 +1,6 @@
 import React from 'react';
-import vic1 from '../../../../assets/vic1.mp4';
-import vic2 from '../../../../assets/vic2.mp4';
+import vic1 from '../../../../assets/testimony1.mp4';
+import vic2 from '../../../../assets/testimony2.mp4';
 import * as Styles from './TestimonyStyles';
 
 const Testimony = () => {

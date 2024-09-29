@@ -11,8 +11,11 @@ export const Testimony = () => {
       <Styles.ReasonsTitle>why EarnBigFromTech?</Styles.ReasonsTitle>
       <Styles.ReasonsListsContainer>
         {reasonsData.map((item, i) => (
-          <Styles.ReasonsList>
-            <Styles.ReasonsListIcon>{<item.icon />}</Styles.ReasonsListIcon>
+          <Styles.ReasonsList key={i}>
+            <Styles.ReasonsListIcon>
+              <img src={item.icon} alt="" />
+            </Styles.ReasonsListIcon>
+
             <Styles.ReasonsListInfo>
               <h4>{item.title}</h4>
               <p>{item.reason}</p>
@@ -25,7 +28,7 @@ export const Testimony = () => {
         <h2>Your time is now</h2>
         <p>
           Register today to be part of our next batch starting on 20th
-          September, 2024.
+          October, 2024.
         </p>
         <Styles.EnrollButtonWrapper>
           <Styles.HeroButton>

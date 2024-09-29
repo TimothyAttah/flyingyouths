@@ -14,6 +14,10 @@ const Tech = () => {
 
       <Styles.TechsMainContainer>
         <Styles.TechTitle>Our Tech Courses</Styles.TechTitle>
+        <Styles.TechSubTitle>
+          Select your course and register today to be part of our next cohort
+          starting on 20th October, 2024.
+        </Styles.TechSubTitle>
         <Styles.TechWrapper>
           {techsData.map((item, i) => (
             <TechListCard key={i} data={item} />

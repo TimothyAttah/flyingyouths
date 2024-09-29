@@ -6,6 +6,8 @@ export const HeaderWrapper = styled.div`
   position: relative;
   background-color: #333;
   background-color: #0d6efd;
+  background-color: #1c4edf;
+  font-family: 'Cormorant Garamond', system-ui;
 
   .activeHeader {
     /* --to: left;
@@ -13,6 +15,7 @@ export const HeaderWrapper = styled.div`
      */
 
     background-color: #333;
+    background-color: #1c4edf;
     color: #fff;
     transition: 1s ease-in-out all;
     box-shadow: ${theme.color.boxShadow};
@@ -68,6 +71,9 @@ export const MainHeaderContainer = styled.div`
   /* background: ${theme.color.mainColor}; */
   background-color: #333;
   background-color: #0d6efd;
+  background-color: #1da1f2;
+  background-color: #e1306c;
+  background-color: #1c4edf;
 
   a {
     color: #fff;

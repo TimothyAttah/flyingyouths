@@ -39,7 +39,7 @@ const About = () => {
       <AboutUs />
       <Testimony />
       {/* <Team /> */}
-      <Programs />
+      {/* <Programs /> */}
     </>
   );
 };

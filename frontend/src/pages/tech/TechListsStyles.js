@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const TechListContainer = styled.div`
-  /* width: 25%; */
-  /* min-width: 300px; */
   min-width: 300px;
   width: 100%;
   width: 300px;
@@ -10,9 +8,13 @@ export const TechListContainer = styled.div`
   margin: 20px;
   /* cursor: pointer; */
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: 0px 10px 0.625rem (0, 0, 0, 0.1);
+  box-shadow: 0px -2px rgba(0, 0, 0, 0.25);
+  box-shadow: rgb(0 0 0 / 59%) 0px 2px 5px;
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
+  font-family: 'Cormorant Garamond', system-ui;
 
   /* ::before {
     content: '';
@@ -77,31 +79,35 @@ export const TechListDuration = styled.div`
 export const TechListTitle = styled.h4`
   font-size: 1.2rem;
   text-align: center;
-  height: 40px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  color: #040018;
+
   /* margin-top: 10px; */
   /* padding-bottom: 10px; */
 `;
 
 export const TechListFee = styled.span`
   color: #737373;
+  color: #040018;
   font-size: 1.2rem;
+  font-weight: 500;
 `;
 
 export const TechListViewButton = styled.button`
-  width: 200px;
+  width: 250px;
   height: 40px;
   background-color: navy;
   color: #fff;
-  margin: 20px auto;
+  margin: 15px auto;
   border-radius: 20px;
 `;
 
 export const TechListJoinButton = styled.button`
-  width: 200px;
+  width: 250px;
   height: 40px;
   background-color: navy;
   color: #fff;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ReasonsContainer = styled.div`
   /* margin: 50px 0; */
@@ -21,12 +21,13 @@ export const ReasonsListsContainer = styled.div`
 export const ReasonsList = styled.div`
   width: 400px;
   display: flex;
-  gap:10px;
+  gap: 10px;
 `;
 
 export const ReasonsListIcon = styled.div`
-  svg {
-    font-size: 50px;
+  border: 2px solid red;
+  img {
+    width: 50px;
   }
 `;
 export const ReasonsListTitle = styled.div``;
@@ -53,4 +54,3 @@ export const TestimonyImg = styled.div`
     width: 100%;
   }
 `;
-

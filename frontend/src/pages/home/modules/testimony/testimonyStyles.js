@@ -2,12 +2,16 @@ import styled from 'styled-components';
 
 export const ReasonsContainer = styled.div`
   /* margin: 50px 0; */
+  font-family: 'Merriweather', serif;
 `;
 export const ReasonsTitle = styled.h2`
   text-align: center;
   font-size: 35px;
   text-transform: capitalize;
   padding-bottom: 20px;
+  font-family: 'Cormorant Garamond', system-ui;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Merriweather', serif;
 `;
 
 export const ReasonsListsContainer = styled.div`
@@ -26,12 +30,14 @@ export const ReasonsList = styled.div`
 `;
 
 export const ReasonsListIcon = styled.div`
-  svg {
-    font-size: 50px;
+  img {
+    width: 200px;
   }
 `;
 export const ReasonsListTitle = styled.div``;
-export const ReasonsListInfo = styled.div``;
+export const ReasonsListInfo = styled.div`
+  font-family: 'Merriweather', serif;
+`;
 
 export const TestimonyWrapper = styled.div`
   padding: 20px;
@@ -41,6 +47,7 @@ export const TestimonyWrapper = styled.div`
     color: #0d6efd;
     color: #040018;
     margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
   }
 `;
 
@@ -110,13 +117,14 @@ export const HeroButton = styled.div`
 export const EnrollWrapper = styled.div`
   width: 100%;
   background-color: #333;
-  color:#fff;
+  color: #fff;
   padding: 20px;
   text-align: center;
+  font-family: 'Merriweather', serif;
 
   h2 {
     text-transform: capitalize;
-    color:#fff;
+    color: #fff;
   }
 `;
 

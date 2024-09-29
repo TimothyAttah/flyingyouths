@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaTimes } from 'react-icons/fa';
 import * as Styles from './TechListModalStyles';
 const TechListModal = ({ data, close }) => {
   const {
@@ -31,7 +32,9 @@ const TechListModal = ({ data, close }) => {
             ))}
           </ul>
         </Styles.TechListModalOutline>
-        <Styles.TechListModalCloseButton onClick={close}>X</Styles.TechListModalCloseButton>
+        <Styles.TechListModalCloseButton onClick={close}>
+          <FaTimes />
+        </Styles.TechListModalCloseButton>
       </Styles.TechListModalInfo>
     </Styles.TechListModalContainer>
   );

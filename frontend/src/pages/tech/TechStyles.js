@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const TechsMainContainer = styled.div`
   padding-top: 100px;
-
-
 `;
 
 export const TechListsWrapper = styled.div`
@@ -75,5 +73,16 @@ export const TechWrapper = styled.div`
 export const TechTitle = styled.h2`
   text-align: center;
   font-size: 2.5rem;
+  font-family: 'Cormorant Garamond', system-ui;
+  padding-bottom: 10px;
+  color: #040018;
+  /* text-decoration: underline; */
+`;
+
+export const TechSubTitle = styled.h4`
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Cormorant Garamond', system-ui;
+  color: #040018;
   /* text-decoration: underline; */
 `;

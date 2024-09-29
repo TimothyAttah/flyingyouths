@@ -20,7 +20,7 @@ export const Hero = () => {
           <h1>
             {/* Welcome to EarnBigFromTech centre for open distance and e-Learning */}
             Welcome to EarnBigFromTech Academy, powered by Enoch Louis Ventures
-            LTD,
+            LTD.
           </h1>
         </FadeIn>
 

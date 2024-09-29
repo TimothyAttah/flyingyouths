@@ -116,10 +116,9 @@ export const SideBar = ({ setShowSidebar }) => {
 
         <Styles.SideBarNavLinks>
           {navData2.map((item, i) => (
-            <li>
+            <li key={i}>
               <NavLink
                 to={item.path}
-                key={i}
                 className={({ isActive }) => (isActive ? 'active' : '')}
                 onClick={() => setShowSidebar(false)}
               >

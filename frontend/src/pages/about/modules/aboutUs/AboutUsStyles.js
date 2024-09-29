@@ -6,6 +6,8 @@ export const AboutMainContainer = styled.div`
   padding: 0 20px;
   align-items: center;
   flex-wrap: wrap;
+  font-family: 'Lato', sans-serif;
+  color: #040018;
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
@@ -19,6 +21,7 @@ export const AboutInfoContainer = styled.div`
   h3 {
     color: white;
     color: #333;
+    color: #040018;
 
     position: relative;
     width: 300px;
@@ -90,7 +93,7 @@ export const AboutInfoOptionsContainer = styled.div`
 
 export const AboutMainInfoContainer = styled.div`
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 600px) {
@@ -103,16 +106,18 @@ export const AboutMainInfoContainer = styled.div`
 export const AboutInfoOptions = styled.div`
   max-width: 250px;
   h4 {
-    font-size: 16px;
+    font-size: 18px;
     text-transform: capitalize;
     color: #fff;
     color: #333;
-
+    color: #040018;
     text-align: center;
   }
 
   p {
-    font-size: 13px;
+    font-size: 14px;
+    color: #040018;
+    text-align: center;
   }
 `;
 

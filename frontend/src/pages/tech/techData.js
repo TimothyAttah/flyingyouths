@@ -13,10 +13,12 @@ import contentPix from '../../assets/tech-content.jpg';
 export const techsData = [
   {
     techTitle: 'Web Development (MERN)',
+    techLink: 'web-development',
     techDescription:
       'The class is 3times weekly We teach front end and Back end which include Html5, Css3, JavaScript, ReactJs, Expressjs, NodeJs, MongoDb all these makes anyone a good full MERN Developer.',
     techPic: `${webPix}`,
     techFee: '₦400,000',
+    techPaymentFee: '400000',
     techDurations: '4 Months',
     techOutlines: [
       'Introduction to Web Development (HTML Basics)',
@@ -55,10 +57,12 @@ export const techsData = [
   },
   {
     techTitle: ' App Development',
+    techLink: 'app-development',
     techDescription:
       'Learning mobile app development (using Swift for iOS or Kotlin for Android) is highly marketable, especially with the demand for custom apps.',
     techPic: `${appPix}`,
     techFee: '₦500,000',
+    techPaymentFee: '500000',
     techDurations: '5 Months',
     techOutlines: [
       'Introduction to Mobile App Development (iOS vs Android)',
@@ -76,10 +80,12 @@ export const techsData = [
   },
   {
     techTitle: ' Graphic Design',
+    techLink: 'graphic-design',
     techDescription:
       'Tools like Adobe Photoshop, Illustrator, or Figma are valuable for design projects, logo creation, or social media content.',
     techPic: `${graphicPix}`,
     techFee: '₦350,000',
+    techPaymentFee: '350000',
     techDurations: '3 Months',
     techOutlines: [
       'Introduction to Graphic Design (Design Principles, Color Theory)',
@@ -93,10 +99,12 @@ export const techsData = [
   },
   {
     techTitle: 'Video Editing',
+    techLink: 'video-editing',
     techDescription:
       'Learning software like Adobe Premiere Pro or Final Cut Pro allows you to offer video editing services for YouTube channels or social media influencers.',
     techPic: `${videoPix}`,
     techFee: '₦350,000',
+    techPaymentFee: '350000',
     techDurations: '3 Months',
     techOutlines: [
       'Introduction to Video Editing (Understanding the Editing Process)',
@@ -110,10 +118,12 @@ export const techsData = [
   },
   {
     techTitle: 'Digital Marketing',
+    techLink: 'digital-marketing',
     techDescription:
       "Understanding SEO, content marketing, social media management, and PPC ads can open opportunities for managing businesses' online presence.",
     techPic: `${digitalPix}`,
     techFee: '₦350,000',
+    techPaymentFee: '350000',
     techDurations: '4 Months',
     techOutlines: [
       'Introduction to Digital Marketing (SEO, Content Marketing, PPC)',
@@ -128,10 +138,12 @@ export const techsData = [
   },
   {
     techTitle: 'Game Development',
+    techLink: 'game-development',
     techDescription:
       'Using platforms like Unity or Unreal Engine, you can create and sell your own games or take on freelance game development projects.',
     techPic: `${gamePix}`,
     techFee: '₦650,000',
+    techPaymentFee: '650000',
     techDurations: '5 Months',
     techOutlines: [
       ' Introduction to Game Development (Concepts, Platforms)',
@@ -147,10 +159,12 @@ export const techsData = [
   },
   {
     techTitle: 'Blockchain Development',
+    techLink: 'blockchain-development',
     techDescription:
       'With the rise of cryptocurrencies and decentralized applications, we will teach you thoroughly and you can explore blockchain programming to work on projects or startups in this space.',
     techPic: `${blockchainPix}`,
     techFee: '₦1,250,000',
+    techPaymentFee: '1250000',
     techDurations: '5 Months',
     techOutlines: [
       'Introduction to Blockchain Technology',
@@ -168,10 +182,12 @@ export const techsData = [
   },
   {
     techTitle: 'Cybersecurity',
+    techLink: 'cybersecurity',
     techDescription:
       'With a growing need for security, learning cybersecurity principles can lead to jobs in ethical hacking, penetration testing, or security auditing.',
     techPic: `${cybersecurityPix}`,
     techFee: '₦350,000',
+    techPaymentFee: '350000',
     techDurations: '3 Months',
     techOutlines: [
       'Introduction to Cybersecurity (Threats, Vulnerabilities)',
@@ -187,10 +203,12 @@ export const techsData = [
   },
   {
     techTitle: '3D Modeling and Animation',
+    techLink: '3d-modeling-animation',
     techDescription:
       'Learning Blender or Autodesk Maya software will give you opportunity to work in animations, architecture, or game design.',
     techPic: `${modelingPix}`,
     techFee: '₦650,000',
+    techPaymentFee: '650000',
     techDurations: '5 Months',
     techOutlines: [
       'Introduction to 3D Modeling (Basics of Blender)',
@@ -208,10 +226,12 @@ export const techsData = [
   },
   {
     techTitle: 'Artificial Intelligence (AI) and Machine Learning tech ',
+    techLink: 'artificial-intelligence-machine-learning',
     techDescription:
       'Explore AI tools, data science, and automation which help you in building innovative solutions or freelance data analysis projects.',
     techPic: `${aiPix}`,
     techFee: '₦1,750,000',
+    techPaymentFee: '1750000',
     techDurations: '6 Months',
     techOutlines: [
       'Introduction to AI and Machine Learning Concepts',
@@ -231,10 +251,12 @@ export const techsData = [
   },
   {
     techTitle: 'Content Creation ',
+    techLink: 'content-creation',
     techDescription:
       'For those who want to Start a YouTube channel, podcast, or blog on a topic of interest can become a source of income through ad revenue, sponsorships, and affiliate marketing.',
     techPic: `${contentPix}`,
     techFee: '₦320,000',
+    techPaymentFee: '320000',
     techDurations: '6 Months',
     techOutlines: [
       'Introduction to Content Creation (Platforms, Niche Selection)',

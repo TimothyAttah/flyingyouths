@@ -12,7 +12,10 @@ export const ReasonsPage = () => {
       <Styles.ReasonsListsContainer>
         {reasonsData.map((item, i) => (
           <Styles.ReasonsList>
-            <Styles.ReasonsListIcon>{<item.icon />}</Styles.ReasonsListIcon>
+            <Styles.ReasonsListIcon>
+              <img src={item.icon} alt="" />
+            </Styles.ReasonsListIcon>
+
             <Styles.ReasonsListInfo>
               <h4>{item.title}</h4>
               <p>{item.reason}</p>

@@ -7,7 +7,8 @@ export const TechListModalContainer = styled.div`
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
-
+  font-family: 'Cormorant Garamond', system-ui;
+  color: #040018;
 
   @media only screen {
     width: 90%;
@@ -111,7 +112,14 @@ export const TechListModalPrice = styled.span`
   font-size: 2rem;
   color:#737373;
 `;
-export const TechListModalDuration = styled.div``;
+export const TechListModalDuration = styled.div`
+  font-size: 1rem;
+  /* right: 10px;
+  top: 10px; */
+  background-color: rgb(223, 247, 255);
+  padding: 5px 10px;
+  border-radius: 15px;
+`;
 export const TechListModalOutlineWrapper = styled.div``;
 export const TechListModalOutline = styled.div`
   margin: 20px 0px;
@@ -128,7 +136,12 @@ export const TechListModalCloseButton = styled.button`
   position: absolute;
   width: 40px;
   height: 40px;
-  font-size: 20px;
+  /* font-size: 10px; */
+
+  svg {
+    font-size: 20px;
+    color: #000;
+  }
 
   @media only screen {
    right: -10px;

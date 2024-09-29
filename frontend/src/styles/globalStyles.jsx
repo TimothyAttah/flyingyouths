@@ -57,7 +57,27 @@ export const GlobalStyle = createGlobalStyle`
     border:0;
     text-decoration: none;
     list-style: none;
-      font-family: "Roboto", sans-serif;
+      ${'' /* font-family: "Roboto", sans-serif; */}
+  ${'' /* font-family: 'Noto Serif', system-ui; */}
+${'' /* font-family: "Cormorant Garamond", system-ui; */}
+${
+  '' /* font-family: "Arimo", system-ui;
+font-family: "Hind", sans-serif;
+      font-family: "Corinthia", cursive;
+      font-family: "Inter", sans-serif; */
+}
+      ${'' /* font-family: "Alegreya Sans", sans-serif;
+      font-family: "Alegreya SC", serif; */}
+      ${'' /* font-family: "Exo", sans-serif; */}
+      ${'' /* font-family: "Alegreya", serif;
+      font-family: "Lato", sans-serif; */}
+      ${'' /* font-family: "Libre Franklin", sans-serif; */}
+      ${'' /* font-family: "Playfair Display", serif; */}
+      ${'' /* font-family: "Lora", serif;
+      font-family: "Merriweather", serif;
+      font-family: "Merriweather Sans", sans-serif;
+      font-family: "Pacifico", cursive;
+      font-family: "Oswald", sans-serif; */}
   }
 
   ::before,
