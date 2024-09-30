@@ -20,7 +20,7 @@ const Footer2 = () => {
         </FadeIn>
         <FadeIn delay={0.3} direction='up'>
           <Styles.FooterDetailsPagesContainer>
-            <p>EarnBigWithTech Pages</p>
+            <p>EarnBigFromTech Pages</p>
             <ul>
               {navData.map((nav) => (
                 <li key={nav.path}>

@@ -2,21 +2,24 @@ import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
   margin-top: 50px;
-  background-color: #333;
-  color:#fff;
+  background-color: #fff;
+  padding: 20px;
+  /* color:#fff; */
 
   h2, h4, p, a {
-    color:#fff;
+    /* color:#fff; */
   }
 `;
 
 export const FooterDetailsMainContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap:wrap;
+  justify-content: center;
   margin-bottom: 20px;
   padding: 10px;
-  color: #fff;
+  /* color: #fff; */
+  gap:20px;
 
   @media screen and (max-width: 700px) {
     flex-direction: column;
@@ -26,8 +29,16 @@ export const FooterDetailsMainContainer = styled.div`
   }
 `;
 export const FooterDetailsInfoContainer = styled.div`
-  width: 300px;
-  color: #fff;
+  width: 250px;
+  /* color: #fff; */
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
 
   @media screen and (max-width: 950px) {
     width: 250px;
@@ -38,12 +49,12 @@ export const FooterDetailsInfoContainer = styled.div`
     }
 
     p {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 `;
 export const FooterDetailsPagesContainer = styled.div`
-  width: 300px;
+  width: 250px;
 
   p {
     font-weight: bold;
@@ -59,7 +70,7 @@ export const FooterDetailsPagesContainer = styled.div`
 
     li a {
       display: flex;
-      font-size: 18px;
+      font-size: 15px;
     }
   }
 
@@ -81,15 +92,15 @@ export const FooterDetailsPagesContainer = styled.div`
 `;
 
 export const FooterDetailsFormContainer = styled.div`
-  width: 410px;
+  width: 380px;
   p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   form {
     width: 100%;
     label {
-      color:#fff;
+      /* color:#fff; */
     }
 
     button {
@@ -97,7 +108,7 @@ export const FooterDetailsFormContainer = styled.div`
       height: 40px;
       width: 100%;
       border-radius: 10px;
-      background-color: transparent;
+      /* background-color: transparent; */
       border: 1px solid #fff;
       color: #fff;
     }
@@ -122,8 +133,9 @@ export const FooterDetailsInputBox = styled.div`
   justify-content: space-between;
   gap: 10px;
   div input {
-    width: 200px;
+    width: 180px;
   }
+
 
   @media screen and (max-width: 950px) {
     width: 300px;

@@ -110,6 +110,7 @@ export const FaqTab = styled.div`
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   overflow: hidden;
+  font-family: 'Poppins', sans-serif;
 
   :hover {
     label::after {
@@ -134,6 +135,7 @@ export const FaqTab = styled.div`
       p {
         color: #fff;
         font-weight: bold;
+        font-family: 'Poppins', sans-serif;
       }
     }
 
@@ -191,6 +193,7 @@ export const FaqTab = styled.div`
       color: #333;
       z-index: 10;
       line-height: 1.4;
+      font-family: 'Poppins', sans-serif;
     }
   }
 

@@ -43,47 +43,7 @@ export const Testimony = () => {
           </Styles.HeroButton>
         </Styles.EnrollButtonWrapper>
       </Styles.EnrollWrapper>
-      <Styles.TestimonyWrapper>
-        <h2>Hear what our students says: Testimony</h2>
-        <div>
-          <Styles.TestimonyName>
-            <Styles.TestimonyImg>
-              <img src={pix1} alt='' />
-            </Styles.TestimonyImg>
-            <>Promise Osasu .E</>
-          </Styles.TestimonyName>
-          <p>
-            I recently completed my full stack web development training at Enoch
-            Louis coding Bootcamp and I am happier with my choice and
-            experience. The instructor is very supportive and very intelligent I
-            have so much respect for him, The workload was challenging but very
-            rewarding. I learnt so so much in a very short amount of time and
-            I'm confident in my ability to build fully responsive full stack
-            applications. If you're looking to go into tech, I highly recommend
-            EBT powered by Enoch Louis coding Bootcamp
-          </p>
-        </div>
-        <div>
-          <Styles.TestimonyName>
-            <Styles.TestimonyImg>
-              <img src={pix2} alt='' />
-            </Styles.TestimonyImg>
-            <>Daniel Shobowale .O</>
-          </Styles.TestimonyName>
-
-          <p>
-            "EBT coding bootcamp is more than just a learning experience- It's a
-            transformative journey into the world of technology. They pride us
-            on offering an immersive, hands-on curriculum that equips our
-            students with skills needed to excel in tech industry. With expert
-            instructors, personalized mentorship, and a focus on real-world
-            applications, they ensure that every participant leaves not only
-            with knowledge but with the confidence to launch a successful
-            career. Join us and be part of a community that fosters innovation,
-            collaboration, and growth."
-          </p>
-        </div>
-      </Styles.TestimonyWrapper>
+      
     </>
   );
 };
