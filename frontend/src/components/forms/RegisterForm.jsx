@@ -10,10 +10,37 @@ import {
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import * as Styles from './RegisterAndLoginFormStyle';
+import { registerUser } from '../../redux/actions/authActions';
+import { useDispatch } from 'react-redux';
 
 const RegisterForm = () => {
-  const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const dispatch = useDispatch();
+  const [userData, setUserData] = useState({
+    firstname: '',
+    lastname: '',
+    email: '',
+    phoneNumber: '',
+    dateOfBirth: '',
+    stateOfResidence: '',
+    courseToLearn: '',
+    highestQualification: '',
+    intentions: '',
+    paymentTerms: '',
+    programAdvert: [],
+    termsAndConditions: '',
+  });
+
+  const {
+    firstname,
+    lastname,
+    email,
+    phoneNumber,
+    dateOfBirth,
+    stateOfResidence,
+    courseToLearn,
+    highestQualification,
+    intentions,
+  } = userData;
 
   function checkPasswordStrength(password) {
     // Implement your password strength logic here
@@ -50,22 +77,66 @@ const RegisterForm = () => {
     });
   }, []);
 
+  const handleUserInputData = (e) => {
+    if (e.target.name === 'programAdvert') {
+      let copy = { ...userData };
+      if (e.target.checked) {
+        copy.programAdvert.push(e.target.value);
+      } else {
+        copy.programAdvert = copy.programAdvert.filter(
+          (el) => el !== e.target.value,
+        );
+      }
+      setUserData(copy);
+    } else if (e.target.name === 'paymentTerms') {
+      let isSelected = e.target.checked;
+      let copy = { ...userData };
+      copy.paymentTerms = isSelected;
+      setUserData(copy);
+    } else if (e.target.name === 'termsAndConditions') {
+      let isSelected = e.target.checked;
+      let copy = { ...userData };
+      copy.termsAndConditions = isSelected;
+      setUserData(copy);
+    } else {
+      setUserData({ ...userData, [e.target.name]: e.target.value });
+    }
+  };
+
+  const handleUserSubmit = (e) => {
+    e.preventDefault();
+    dispatch(registerUser(userData));
+    console.log(userData);
+  };
+
   return (
     <>
       <h1>Register</h1>
-      <form action=''>
+      <form onSubmit={handleUserSubmit}>
         <Styles.InputBoxWrapper>
           <Styles.InputBox>
             <span>
               <FaUserAlt />
             </span>
-            <input type='text' placeholder='First Name' />
+            <input
+              type='text'
+              placeholder='First Name'
+              name='firstname'
+              value={firstname}
+              onChange={handleUserInputData}
+            />
           </Styles.InputBox>
           <Styles.InputBox primary='true'>
             <span>
               <FaUserAlt />
             </span>
-            <input type='text' placeholder='last Name' />
+            <input
+              type='text'
+              placeholder='last Name'
+              name='lastname'
+              value={lastname}
+              onChange={handleUserInputData}
+            />
           </Styles.InputBox>
         </Styles.InputBoxWrapper>
         <Styles.InputBoxWrapper>
@@ -73,7 +144,13 @@ const RegisterForm = () => {
             <span>
               <FaAt />
             </span>
-            <input type='email' placeholder='email address' />
+            <input
+              type='email'
+              placeholder='email address'
+              name='email'
+              value={email}
+              onChange={handleUserInputData}
+            />
           </Styles.InputBox>
         </Styles.InputBoxWrapper>
 
@@ -82,13 +159,25 @@ const RegisterForm = () => {
             <span>
               <FaPhoneAlt />
             </span>
-            <input type='number' placeholder='phone number' />
+            <input
+              type='text'
+              placeholder='phone number'
+              name='phoneNumber'
+              value={phoneNumber}
+              onChange={handleUserInputData}
+            />
           </Styles.InputBox>
           <Styles.InputBox primary='true'>
             <span>
               <FaCalendar />
             </span>
-            <input type='text' placeholder='date of birth' />
+            <input
+              type='text'
+              placeholder='date of birth'
+              name='dateOfBirth'
+              value={dateOfBirth}
+              onChange={handleUserInputData}
+            />
           </Styles.InputBox>
         </Styles.InputBoxWrapper>
 
@@ -133,7 +222,12 @@ const RegisterForm = () => {
         </Styles.PasswordInputBox> */}
 
         <Styles.SelectBox>
-          <select name='states' id='states'>
+          <select
+            id='states'
+            name='stateOfResidence'
+            value={stateOfResidence}
+            onChange={handleUserInputData}
+          >
             <option value=''>State of residence</option>
             <option value='Abia'>Abia</option>
             <option value='Adamawa'>Adamawa</option>
@@ -177,7 +271,12 @@ const RegisterForm = () => {
 
         <Styles.InputBoxWrapper>
           <Styles.SelectBox>
-            <select id='tech-skills' name='tech-skills'>
+            <select
+              id='tech-skills'
+              name='courseToLearn'
+              value={courseToLearn}
+              onChange={handleUserInputData}
+            >
               <option value=''>Select a Tech Course:</option>
               <option value='Web Development'>Web Development</option>
               <option value='App Development'>App Development</option>
@@ -199,7 +298,12 @@ const RegisterForm = () => {
             </select>
           </Styles.SelectBox>
           <Styles.SelectBox>
-            <select name='qualification' id='qualification'>
+            <select
+              id='qualification'
+              name='highestQualification'
+              value={highestQualification}
+              onChange={handleUserInputData}
+            >
               <option value=''>select highest qualification</option>
               <option value='primary'>primary</option>
               <option value='still_in_senior_secondary_school'>
@@ -215,9 +319,11 @@ const RegisterForm = () => {
           </Styles.SelectBox>
         </Styles.InputBoxWrapper>
         <textarea
-          name=''
           id=''
           placeholder='What do you intend to do?'
+          name='intentions'
+          value={intentions}
+          onChange={handleUserInputData}
           style={{
             border: '1px solid #333',
             width: '100%',
@@ -229,7 +335,11 @@ const RegisterForm = () => {
 
         <Styles.TermsAndConditions>
           <div>
-            <input type='checkbox' />
+            <input
+              type='checkbox'
+              name='paymentTerms'
+              onChange={handleUserInputData}
+            />
           </div>
           <h5>
             If you are selected, are you ready to pay 80% of your tuition fee to
@@ -298,28 +408,57 @@ const RegisterForm = () => {
           <h4>How did you hear about this program?</h4>
           <Styles.CheckboxWrapper>
             <label htmlFor='social-media'>Social Media</label>
-            <input type='checkbox' name='source' id='social-media' />
+            <input
+              type='checkbox'
+              id='social-media'
+              name='programAdvert'
+              value='social-media'
+              onChange={handleUserInputData}
+            />
           </Styles.CheckboxWrapper>
           <Styles.CheckboxWrapper>
             <label htmlFor='friend-family'>Friends / Family</label>
-            <input type='checkbox' name='source' id='friend-family' />
+            <input
+              type='checkbox'
+              id='friend-family'
+              name='programAdvert'
+              value='friend-family'
+              onChange={handleUserInputData}
+            />
           </Styles.CheckboxWrapper>
           <Styles.CheckboxWrapper>
             <label htmlFor='email'>Email</label>
-            <input type='checkbox' name='source' id='email' />
+            <input
+              type='checkbox'
+              id='email'
+              name='programAdvert'
+              value='email'
+              onChange={handleUserInputData}
+            />
           </Styles.CheckboxWrapper>
           <Styles.CheckboxWrapper>
             <label htmlFor='other'>Other</label>
-            <input type='checkbox' name='source' id='other' />
+            <input
+              type='checkbox'
+              id='other'
+              name='programAdvert'
+              value='other'
+              onChange={handleUserInputData}
+            />
           </Styles.CheckboxWrapper>
         </div>
 
         <Styles.TermsAndConditions>
           <div>
-            <input type='checkbox' />
+            <input
+              type='checkbox'
+              name='termsAndConditions'
+              onChange={handleUserInputData}
+            />
           </div>
           <small>
-            I agree to the <Link>terms and conditions.</Link>
+            {/* I agree to the <Link>terms and conditions.</Link> */}I agree to
+            the terms and conditions.
           </small>
         </Styles.TermsAndConditions>
 

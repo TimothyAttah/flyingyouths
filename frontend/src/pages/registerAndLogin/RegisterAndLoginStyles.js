@@ -5,11 +5,11 @@ export const SignupContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 150px;
+  padding-top: 70px;
   padding-bottom: 50px;
 
   h2 {
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     text-transform: capitalize;
     font-size: 30px;
     color: #fff;

@@ -14,7 +14,8 @@ export const TechListContainer = styled.div`
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  font-family: 'Cormorant Garamond', system-ui;
+  /* font-family: 'Cormorant Garamond', system-ui; */
+  font-family: 'Lato', sans-serif;
 
   /* ::before {
     content: '';

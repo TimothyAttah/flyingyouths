@@ -11,10 +11,12 @@ import RegisterAndLogin from './pages/registerAndLogin/RegisterAndLogin';
 import Programs from './pages/programs/Programs';
 import Tech from './pages/tech/Tech2';
 import Payment from './pages/payment/Payment';
+import ScrollFromTop from './components/ScrollFromTop';
 
 const App = () => {
   return (
     <>
+      <ScrollFromTop />
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route path='/' element={<Home />} />

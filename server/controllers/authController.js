@@ -8,28 +8,40 @@ const authControllers = {
       const {
         firstname,
         lastname,
+        email,
         phoneNumber,
         dateOfBirth,
-        email,
-        password,
+        stateOfResidence,
+        courseToLearn,
+        highestQualification,
+        intentions,
+        paymentTerms,
+        programAdvert,
+        termsAndConditions,
       } = req.body;
 
       const user = await User.findOne({ email });
       if (user)
         return res.status(400).json({ msg: 'This email already exists.' });
 
-      const hashPassword = await bcrypt.hash(password, 12);
+      // const hashPassword = await bcrypt.hash(password, 12);
       const newUser = await User({
         firstname,
         lastname,
+        email,
         phoneNumber,
         dateOfBirth,
-        email,
-        password: hashPassword,
+        stateOfResidence,
+        courseToLearn,
+        highestQualification,
+        intentions,
+        paymentTerms,
+        programAdvert,
+        termsAndConditions,
       });
 
       await newUser.save();
-      newUser.password = undefined;
+      // newUser.password = undefined;
 
       return res
         .status(200)

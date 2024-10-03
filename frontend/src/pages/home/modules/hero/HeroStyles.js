@@ -4,15 +4,16 @@ export const HeroContainer = styled.div`
   padding: 20px;
   padding-top: 100px;
   /* font-family: 'Merriweather Sans', sans-serif; */
-  font-family: 'Merriweather', serif;
+  /* font-family: 'Merriweather', serif; */
+  font-family: 'Lato', sans-serif;
   h1 {
     text-align: center;
     --to: left;
     font-size: 3rem;
     font-weight: bold;
     color: #333;
-    color:#111;
-    color:#040018;
+    color: #111;
+    color: #040018;
     line-height: 3.5rem;
     padding-bottom: 5px;
     margin-top: 20px;
@@ -69,7 +70,7 @@ export const HeroSubTitle = styled.p`
   text-align: center;
   color: #111;
   color: #040018;
-  font-family: 'Merriweather', serif;
+  font-family: 'Lato', sans-serif;
 
   font-size: 1.4rem;
 

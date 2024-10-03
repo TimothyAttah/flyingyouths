@@ -25,7 +25,8 @@ export const PaymentHeroContainer = styled.div`
     font-size: 50px;
     margin-bottom: 15px;
     color: #fff;
-    font-family: 'Noto Serif', system-ui;
+    /* font-family: 'Noto Serif', system-ui; */
+    font-family: 'Lato', sans-serif;
   }
 
   p {
@@ -33,7 +34,7 @@ export const PaymentHeroContainer = styled.div`
     font-size: 14px;
     margin: auto;
     line-height: 20px;
-    font-family: 'Noto Serif', system-ui;
+    font-family: 'Lato', sans-serif;
   }
 
   @media screen and (max-width: 470px) {

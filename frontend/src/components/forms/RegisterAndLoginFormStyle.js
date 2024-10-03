@@ -119,11 +119,13 @@ export const PasswordInputBox = styled.div`
 `;
 
 export const SelectBox = styled.div`
-  width: 400px;
+  width: 100%;
   select {
     background-color: transparent;
     text-transform: capitalize;
     height: 50px;
+    padding: 10px;
+
     /* color: aliceblue; */
 
     option {

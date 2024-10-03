@@ -3,6 +3,13 @@ import * as Styles from './TechListsStyles';
 import { Link } from 'react-router-dom';
 const TechLists = ({ data, open }) => {
   const { techTitle, techPic, techFee, techDurations, techLink, } = data;
+
+  const scrollToTop = () => {
+   
+     document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 0;
+  }
+
   return (
     <Styles.TechListContainer>
       <Styles.TechListContent>
@@ -23,7 +30,7 @@ const TechLists = ({ data, open }) => {
             </Styles.TechListViewButton>
           </Styles.TechListRow>
           <Styles.TechListRow>
-            <Link to={`/payment/${techLink}`}>
+            <Link to={`/payment/${techLink}`} onClick={scrollToTop}>
               <Styles.TechListJoinButton>
                 Join the next cohort
               </Styles.TechListJoinButton>

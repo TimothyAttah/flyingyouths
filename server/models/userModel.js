@@ -10,6 +10,11 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+    },
     phoneNumber: {
       type: String,
       required: true,
@@ -18,14 +23,35 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    email: {
+    stateOfResidence: {
       type: String,
       required: true,
-      unique: true,
     },
-    password: {
+    courseToLearn: {
       type: String,
       required: true,
+    },
+    highestQualification: {
+      type: String,
+      required: true,
+    },
+    intentions: {
+      type: String,
+      required: true,
+    },
+    paymentTerms: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
+    programAdvert: {
+      type: [],
+      required: true,
+    },
+    termsAndConditions: {
+      type: Boolean,
+      required: true,
+      default: false,
     },
   },
   { timestamps: true },

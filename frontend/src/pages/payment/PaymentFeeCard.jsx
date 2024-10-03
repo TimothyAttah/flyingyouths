@@ -10,6 +10,38 @@ const PaymentFeeCard = () => {
   const [installmentPayment, setInstallmentPayment] = useState(false);
   const [earlyBidPayment, setEarlyBidPayment] = useState(false);
 
+  const scrollToTop = () => {
+    if (oncePayment) {
+      setOncePayment(true);
+    } else if (installmentPayment) {
+      setInstallmentPayment(true);
+    } else if (earlyBidPayment) {
+      setEarlyBidPayment(true);
+    } else {
+      return null;
+    }
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
+  const handleOncePayment = () => {
+    setOncePayment(true);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
+  const handleInstallentPayment = () => {
+    setInstallmentPayment(true);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
+  const handleEarlyBidPayment = () => {
+    setEarlyBidPayment(true);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
   return (
     <Styles.PaymentFeeCardContainer>
       <Styles.PaymentFeeCardTitle>
@@ -43,7 +75,7 @@ const PaymentFeeCard = () => {
                       {/* Balance {(Number(item.techPaymentFee) - 50000) / 2} at
                       week 3 of the program */}
                     </Styles.PaymentDecision>
-                    <Styles.PaymentButton onClick={() => setOncePayment(true)}>
+                    <Styles.PaymentButton onClick={() => handleOncePayment()}>
                       select
                     </Styles.PaymentButton>
                     {oncePayment && (
@@ -74,7 +106,7 @@ const PaymentFeeCard = () => {
                       week 3 of the program
                     </Styles.PaymentDecision>
                     <Styles.PaymentButton
-                      onClick={() => setInstallmentPayment(true)}
+                      onClick={() => handleInstallentPayment()}
                     >
                       select
                     </Styles.PaymentButton>
@@ -106,7 +138,7 @@ const PaymentFeeCard = () => {
                       Available till October 20th, 2024
                     </Styles.PaymentDecision>
                     <Styles.PaymentButton
-                      onClick={() => setEarlyBidPayment(true)}
+                      onClick={() => handleEarlyBidPayment()}
                     >
                       select
                     </Styles.PaymentButton>

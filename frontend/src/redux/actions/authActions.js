@@ -12,7 +12,7 @@ export const registerUser = (userData) => async (dispatch) => {
     console.log('User Data:', data);
 
     toast.success(data.msg);
-    window.location.href = '/register_success';
+    // window.location.href = '/register_success';
   } catch (err) {
     if (err.response && err.response.data) {
       toast.error(err.response.data.msg);

@@ -7,7 +7,8 @@ export const TechListModalContainer = styled.div`
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
-  font-family: 'Cormorant Garamond', system-ui;
+  /* font-family: 'Cormorant Garamond', system-ui; */
+  font-family: 'Lato', sans-serif;
   color: #040018;
 
   @media only screen {

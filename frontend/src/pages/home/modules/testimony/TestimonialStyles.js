@@ -3,7 +3,8 @@ import styled, { css } from 'styled-components';
 export const TestimonialMainContainer = styled.div`
   max-width: 800px;
   width: 100%;
-  font-family: 'Merriweather', serif;
+  /* font-family: 'Merriweather', serif; */
+  font-family: 'Lato', sans-serif;
   background-color: #f6f6f6;
   margin-inline: auto;
   padding: 20px;
