@@ -12,7 +12,15 @@ connectDB();
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+
+const corsOrigin = {
+  origin: 'http://localhost:3000', //or whatever port your frontend is using
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionSuccessStatus: 200,
+};
+// app.use(cors());
+app.use(cors(corsOrigin));
 
 app.get('/', (req, res) => {
   res.send('Welcome To Enoch Louis Coding Bootcamp School');
