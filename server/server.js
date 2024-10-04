@@ -13,13 +13,13 @@ const app = express();
 app.use(express.json());
 
 const corsOrigin = {
-  // origin: 'http://localhost:3000', //or whatever port your frontend is using
+  origin: 'https://earnbigfromtech.com', //or whatever port your frontend is using
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionSuccessStatus: 200,
 };
-app.use(cors());
-// app.use(cors(corsOrigin));
+// app.use(cors());
+app.use(cors(corsOrigin));
 
 app.get('/', (req, res) => {
   res.send('Welcome To Enoch Louis Coding Bootcamp School');
