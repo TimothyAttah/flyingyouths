@@ -9,10 +9,21 @@ export const registerUser = (userData) => async (dispatch) => {
       type: USER_TYPE.REGISTER_USER,
       payload: data,
     });
-    console.log('User Data:', data);
+    console.log('User Data:', data.data);
+
+    let str = data.data.courseToLearn;
+
+    let newLink = str.replace(/\s+/g, '-').toLowerCase();
+
+
+
+
+    // str = str.replace(/\s+/g, '-').toLowerCase();
 
     toast.success(data.msg);
-    // window.location.href = '/register_success';
+    localStorage.setItem('user', JSON.stringify(data.data));
+    window.location.href = `/payment/${newLink}`;
+
   } catch (err) {
     if (err.response && err.response.data) {
       toast.error(err.response.data.msg);

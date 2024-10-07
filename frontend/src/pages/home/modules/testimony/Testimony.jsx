@@ -37,13 +37,13 @@ export const Testimony = () => {
             </Link>
           </Styles.HeroButton>
           <Styles.HeroButton>
-            <Link to='/students/register'>
+            <Link to='/contact'>
               <button>Speak to our team</button>
             </Link>
           </Styles.HeroButton>
         </Styles.EnrollButtonWrapper>
       </Styles.EnrollWrapper>
-      
+
     </>
   );
 };

@@ -12,6 +12,7 @@ import Programs from './pages/programs/Programs';
 import Tech from './pages/tech/Tech2';
 import Payment from './pages/payment/Payment';
 import ScrollFromTop from './components/ScrollFromTop';
+import { RequireRegistration } from './components/Authentication';
 
 const App = () => {
   return (
@@ -27,8 +28,10 @@ const App = () => {
 
           <Route path='/contact' element={<Contact />} />
           <Route path='/students/register' element={<RegisterAndLogin />} />
-          <Route path='/payment' element={<Payment />} />
-          <Route path='/payment/:course' element={<Payment />} />
+          <Route element={<RequireRegistration />}>
+            <Route path='/payment' element={<Payment />} />
+            <Route path='/payment/:course' element={<Payment />} />
+          </Route>
         </Route>
       </Routes>
       <ToastContainer />

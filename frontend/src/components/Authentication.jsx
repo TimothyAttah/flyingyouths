@@ -14,6 +14,16 @@ export const RequireAuth = () => {
   );
 };
 
+export const RequireRegistration = () => {
+  const location = useLocation();
+
+  return user ? (
+    <Outlet />
+  ) : (
+    <Navigate to='/students/register' state={{ from: location }} replace />
+  );
+};
+
 export const RequirePayment = () => {
   const location = useLocation();
 

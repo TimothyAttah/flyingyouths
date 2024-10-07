@@ -1,11 +1,20 @@
 import React from 'react';
 import * as Styles from './TechListsStyles';
 import { Link } from 'react-router-dom';
+import { user } from '../../components/Authentication';
 const TechLists = ({ data, open }) => {
   const { techTitle, techPic, techFee, techDurations, techLink, } = data;
+  console.log(techTitle);
+
+
+
+     let str = techTitle;
+
+     let newLink = str.replace(/\s+/g, '-').toLowerCase();
+
 
   const scrollToTop = () => {
-   
+
      document.body.scrollTop = 0;
      document.documentElement.scrollTop = 0;
   }
@@ -30,7 +39,7 @@ const TechLists = ({ data, open }) => {
             </Styles.TechListViewButton>
           </Styles.TechListRow>
           <Styles.TechListRow>
-            <Link to={`/payment/${techLink}`} onClick={scrollToTop}>
+            <Link to={`/payment/${newLink}`} onClick={scrollToTop}>
               <Styles.TechListJoinButton>
                 Join the next cohort
               </Styles.TechListJoinButton>

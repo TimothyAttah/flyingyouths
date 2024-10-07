@@ -7,8 +7,9 @@ import trainingIcon from '../../assets/people.png';
 import practicalIcon from '../../assets/training.png';
 import earningsIcon from '../../assets/earnings.png';
 
+const user = JSON.parse(localStorage.getItem('user'));
 
-
+console.log(user);
 
 const Payment = () => {
   const payment = gsap.timeline();
@@ -16,17 +17,29 @@ const Payment = () => {
   return (
     <div>
       <Transition timeline={payment} />
+
       <Styles.PaymentContainer>
+        {user && (
+          <Styles.PaymentUserBox>
+            <h1>
+              Welcome <span>{user.firstname}</span>
+              <span> {user.lastname} </span>your registration was successful,
+              please continue below to make your payment.
+            </h1>
+          </Styles.PaymentUserBox>
+        )}
         <Styles.PaymentHeroContainer>
-          <h2>
-            The Training that <br /> makes you stand out!
-          </h2>
-          <p>
-            EarnBigFromTech School was created with you in mind. Here we takes
-            you through a journey of intensive learning to a journey of
-            international learning and development and gets you ready for the
-            workplace. Enroll today to become a top tech talent.
-          </p>
+          <Styles.PaymentHeroInfoBox>
+            <h2>
+              The Training that <br /> makes you stand out!
+            </h2>
+            <p>
+              EarnBigFromTech School was created with you in mind. Here we takes
+              you through a journey of intensive learning to a journey of
+              international learning and development and gets you ready for the
+              workplace. Enroll today to become a top tech talent.
+            </p>
+          </Styles.PaymentHeroInfoBox>
         </Styles.PaymentHeroContainer>
         <Styles.PaymentInfoWrapper>
           <Styles.PaymentInfo>
@@ -73,7 +86,6 @@ const Payment = () => {
         </Styles.PaymentDescription>
 
         <div>
-         
           <PaymentFeeCard />
         </div>
       </Styles.PaymentContainer>

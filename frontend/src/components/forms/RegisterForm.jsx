@@ -106,7 +106,11 @@ const RegisterForm = () => {
   const handleUserSubmit = (e) => {
     e.preventDefault();
     dispatch(registerUser(userData));
-    // console.log(userData);
+
+    setTimeout(() => {
+
+    },300)
+
   };
 
   return (
@@ -172,7 +176,7 @@ const RegisterForm = () => {
               <FaCalendar />
             </span>
             <input
-              type='text'
+              type='date'
               placeholder='date of birth'
               name='dateOfBirth'
               value={dateOfBirth}
@@ -278,8 +282,8 @@ const RegisterForm = () => {
               onChange={handleUserInputData}
             >
               <option value=''>Select a Tech Course:</option>
-              <option value='Web Development'>Web Development</option>
-              <option value='App Development'>App Development</option>
+              <option value='Web Development'>Web Development (MERN)</option>
+              <option value='App Development'> App Development</option>
               <option value='Graphic Design'>Graphic Design</option>
               <option value='Video Editing'>Video Editing</option>
               <option value='Digital Marketing'>Digital Marketing</option>

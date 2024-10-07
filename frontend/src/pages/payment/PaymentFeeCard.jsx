@@ -3,9 +3,13 @@ import { useParams } from 'react-router-dom';
 import { techsData } from '../tech/techData';
 import * as Styles from './PaymentFeeCardStyles';
 import PaymentForm from './PaymentForm';
+import { user } from '../../components/Authentication';
 
 const PaymentFeeCard = () => {
   const course = useParams().course;
+
+
+
   const [oncePayment, setOncePayment] = useState(false);
   const [installmentPayment, setInstallmentPayment] = useState(false);
   const [earlyBidPayment, setEarlyBidPayment] = useState(false);

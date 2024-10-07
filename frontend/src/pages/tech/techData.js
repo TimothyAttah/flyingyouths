@@ -203,7 +203,7 @@ export const techsData = [
   },
   {
     techTitle: '3D Modeling and Animation',
-    techLink: '3d-modeling-animation',
+    techLink: '3d-modeling-and-animation',
     techDescription:
       'Learning Blender or Autodesk Maya software will give you opportunity to work in animations, architecture, or game design.',
     techPic: `${modelingPix}`,
@@ -226,7 +226,7 @@ export const techsData = [
   },
   {
     techTitle: 'Artificial Intelligence (AI) and Machine Learning tech ',
-    techLink: 'artificial-intelligence-machine-learning',
+    techLink: 'artificial-intelligence-and-machine-learning-tech',
     techDescription:
       'Explore AI tools, data science, and automation which help you in building innovative solutions or freelance data analysis projects.',
     techPic: `${aiPix}`,

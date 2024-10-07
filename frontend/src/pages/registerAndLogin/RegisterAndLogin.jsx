@@ -18,3 +18,4 @@ const RegisterAndLogin = () => {
 }
 
 export default RegisterAndLogin
+

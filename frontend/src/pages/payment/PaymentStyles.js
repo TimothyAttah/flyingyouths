@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import heroBg from '../../assets/paymentBg.jpg'
+import styled from 'styled-components';
+import heroBg from '../../assets/student20.png';
 
 export const PaymentContainer = styled.div`
   padding-top: 70px;
@@ -10,6 +10,32 @@ export const PaymentHero = styled.div`
   /* height: 80vh; */
 `;
 
+export const PaymentUserBox = styled.div`
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 0 5px;
+
+  h1 {
+    font-size: 50px;
+    font-weight: 400;
+
+    span {
+      color: #0d6efd;
+      /* background-color: #0d6efd; */
+      font-weight: bold;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+    }
+  }
+`;
+
 export const PaymentHeroContainer = styled.div`
   background-image: url(${heroBg});
   /* background-position: center; */
@@ -17,14 +43,47 @@ export const PaymentHeroContainer = styled.div`
   background-size: cover;
   width: 100%;
   /* padding: 0px 20px; */
-  padding: 15% 30px;
+  padding: 10% 30px;
+  padding: 22% 30px;
+
+  /* 22% 30px */
   color: #fff;
+  color: #000;
   text-align: center;
+
+
+  @media screen and (max-width: 470px) {
+    background-size: cover;
+    padding: 12% 20px;
+    text-align: center;
+
+    h2 {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
+`;
+
+export const PaymentHeroInfoBox = styled.div`
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: #8080807d;
+  /* opacity: 0.6; */
+  border-radius: 5px;
+  color: #fff;
 
   h2 {
     font-size: 50px;
     margin-bottom: 15px;
+    /* color: #000; */
     color: #fff;
+
     /* font-family: 'Noto Serif', system-ui; */
     font-family: 'Lato', sans-serif;
   }
@@ -38,10 +97,6 @@ export const PaymentHeroContainer = styled.div`
   }
 
   @media screen and (max-width: 470px) {
-    background-size: cover;
-    padding: 12% 20px;
-    text-align: center;
-
     h2 {
       font-size: 15px;
       margin-bottom: 10px;
@@ -62,7 +117,7 @@ export const PaymentInfoWrapper = styled.div`
   background-color: #fff;
   padding: 20px 0;
   flex-wrap: wrap;
-  box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.90);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.9);
 `;
 
 export const PaymentInfo = styled.div`

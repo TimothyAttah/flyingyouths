@@ -2,9 +2,11 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Backdrop from '../../components/Backdrop';
 import * as Styles from './PaymentFormStyles';
+import { user } from '../../components/Authentication';
 
 const PaymentForm = ({ amount, paymentType, close }) => {
   const navigate = useNavigate();
+
   return (
     <div>
       <Backdrop onClick={close} />
@@ -22,20 +24,20 @@ const PaymentForm = ({ amount, paymentType, close }) => {
           <Styles.PaymentFormInputBoxWrapper>
             <Styles.PaymentFormInputBox>
               <label htmlFor='firstName'>First Name</label>
-              <input type='text' />
+              <input type='text' value={user.firstname} />
             </Styles.PaymentFormInputBox>
             <Styles.PaymentFormInputBox>
               <label htmlFor='lastName'>Last Name</label>
-              <input type='text' />
+              <input type='text' value={user.lastname} />
             </Styles.PaymentFormInputBox>
           </Styles.PaymentFormInputBoxWrapper>
           <Styles.PaymentFormInputBox>
             <label htmlFor='email'>Email</label>
-            <input type='email' />
+            <input type='email' value={user.email} />
           </Styles.PaymentFormInputBox>
           <Styles.PaymentFormInputBox>
             <label htmlFor='phoneNumber'>Phone Number</label>
-            <input type='number' />
+            <input type='number' value={user.phoneNumber} />
           </Styles.PaymentFormInputBox>
           <Styles.PaymentFormInputBox>
             <label htmlFor='amount'>Amount</label>
