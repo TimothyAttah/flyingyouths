@@ -13,6 +13,7 @@ import Tech from './pages/tech/Tech2';
 import Payment from './pages/payment/Payment';
 import ScrollFromTop from './components/ScrollFromTop';
 import { RequireRegistration } from './components/Authentication';
+import Login from './pages/registerAndLogin/Login';
 
 const App = () => {
   return (
@@ -28,6 +29,8 @@ const App = () => {
 
           <Route path='/contact' element={<Contact />} />
           <Route path='/students/register' element={<RegisterAndLogin />} />
+          <Route path='/students/login' element={<Login />} />
+
           <Route element={<RequireRegistration />}>
             <Route path='/payment' element={<Payment />} />
             <Route path='/payment/:course' element={<Payment />} />

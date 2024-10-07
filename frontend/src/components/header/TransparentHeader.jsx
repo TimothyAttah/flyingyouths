@@ -36,14 +36,22 @@ const TransparentHeader = () => {
             <button>Online academy</button>
           </Link>
         </div> */}
-        {/* <Styles.HeaderButtonBox>
-          <Link to='/students/register'>
-            <Styles.HeaderButton>Register</Styles.HeaderButton>
-          </Link>
-          <Link to='/students/login'>
-            <Styles.HeaderButton>Login</Styles.HeaderButton>
-          </Link>
-        </Styles.HeaderButtonBox> */}
+
+        {user ? (
+          <Styles.HeaderUserBox>
+            <h4>{user.firstname} {user.lastname}</h4>
+            <Styles.HeaderButton onClick={handleLogout}>Logout</Styles.HeaderButton>
+          </Styles.HeaderUserBox>
+        ) : (
+          <Styles.HeaderButtonBox>
+            <Link to='/students/register'>
+              <Styles.HeaderButton>Register</Styles.HeaderButton>
+            </Link>
+            <Link to='/students/login'>
+              <Styles.HeaderButton>Login</Styles.HeaderButton>
+            </Link>
+          </Styles.HeaderButtonBox>
+        )}
 
         <AnimatePresence>
           {showSidebar && <SideBar setShowSidebar={setShowSidebar} />}

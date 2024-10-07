@@ -74,7 +74,7 @@ export const validRegister = async (req, res, next) => {
 };
 
 export const validLogin = async (req, res, next) => {
-  const { email, password } = req.body;
+  const { email, phoneNumber } = req.body;
 
   if (!email) {
     return res.status(400).json({ msg: 'Please enter your email address.' });
@@ -82,13 +82,14 @@ export const validLogin = async (req, res, next) => {
     return res.status(400).json({ msg: 'Invalid Email. Format is incorrect.' });
   }
 
-  if (!password) {
-    return res.status(400).json({ msg: 'Please enter your password.' });
-  } else if (password.length < 6) {
-    return res
-      .status(400)
-      .json({ msg: 'Password must be at least 6 chars long.' });
+  if (!phoneNumber) {
+    return res.status(400).json({ msg: 'Please enter your phone number.' });
   }
+  // } else if (password.length < 6) {
+  //   return res
+  //     .status(400)
+  //     .json({ msg: 'Password must be at least 6 chars long.' });
+  // }
 
   next();
 };

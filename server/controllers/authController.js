@@ -53,22 +53,26 @@ const authControllers = {
 
   login: async (req, res) => {
     try {
-      const { email, password } = req.body;
+      const { email, phoneNumber } = req.body;
 
       const user = await User.findOne({ email });
       if (!user)
         return res.status(400).json({ msg: 'This email does not exists.' });
 
-      const confirmPassword = await bcrypt.compare(password, user.password);
-      if (!confirmPassword)
-        return res.status(400).json({ msg: 'This password is incorrect.' });
+      if (phoneNumber !== user.phoneNumber) {
+        return res
+          .status(400)
+          .json({ msg: 'This phone number does not match.' });
+      }
 
-      const token = await jwt.sign({ _id: user._id }, process.env.JWT_SECRET);
+      // const confirmPassword = await bcrypt.compare(password, user.password);
+      // if (!confirmPassword)
+      //   return res.status(400).json({ msg: 'This password is incorrect.' });
 
-      user.password = undefined;
-      return res
-        .status(200)
-        .json({ msg: 'Login Successfully!!!', token, data: user });
+      // const token = await jwt.sign({ _id: user._id }, process.env.JWT_SECRET);
+
+      // user.password = undefined;
+      return res.status(200).json({ msg: 'Login Successfully!!!', data: user });
     } catch (err) {
       return res.status(500).json({ msg: err.message });
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Styles from './SideBarStyles';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 // import { NavLink } from '../navlink/NavLink';
 import { FaTimes } from 'react-icons/fa';
 import Backdrop from '../Backdrop';
@@ -100,6 +100,7 @@ export const SideBar = ({ setShowSidebar }) => {
   const handleLogout = () => {
     localStorage.removeItem('user');
     window.location.reload();
+    setShowSidebar(false);
   };
   return (
     <>
@@ -128,7 +129,24 @@ export const SideBar = ({ setShowSidebar }) => {
             </li>
           ))}
         </Styles.SideBarNavLinks>
-        {/* {user && <Styles.LogoutBtn>Logout</Styles.LogoutBtn>} */}
+
+        {user ? (
+          <Styles.SidebarUserBox>
+            <h4>
+              {user.firstname} {user.lastname}
+            </h4>
+            <button onClick={handleLogout}>Logout</button>
+          </Styles.SidebarUserBox>
+        ) : (
+          <Styles.SidebarUserBox>
+            <Link to='/students/register' onClick={() => setShowSidebar(false)}>
+              <button>Register</button>
+            </Link>
+            <Link to='/students/login' onClick={() => setShowSidebar(false)}>
+              <button>Login</button>
+            </Link>
+          </Styles.SidebarUserBox>
+        )}
       </Styles.SideBar>
     </>
   );

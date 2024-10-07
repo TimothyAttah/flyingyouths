@@ -27,7 +27,7 @@ export const NavWrapper = styled.div`
     cursor: pointer;
   }
 
-  @media screen and (max-width: ${theme.screens.mediumScreen}) {
+  @media screen and (max-width: 900px) {
     svg {
       display: flex;
     }
@@ -120,7 +120,7 @@ export const NavContainer = styled.nav`
     }
   }
 
-  @media screen and (max-width: ${theme.screens.mediumScreen}) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;

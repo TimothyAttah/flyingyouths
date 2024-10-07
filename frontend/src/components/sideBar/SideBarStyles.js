@@ -184,3 +184,30 @@ export const Button = styled.div`
     }
   }
 `;
+
+export const SidebarUserBox = styled.div`
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+
+  h4 {
+    text-transform: capitalize;
+  }
+
+  button {
+    width: 200px;
+    height: 50px;
+    border-radius:10px;
+    background-color: crimson;
+    color:#fff;
+    text-transform: uppercase;
+    :hover {
+      opacity: 0.7;
+    }
+  }
+`;

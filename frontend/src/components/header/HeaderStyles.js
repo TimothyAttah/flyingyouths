@@ -95,7 +95,7 @@ export const HeaderLogo = styled.div`
     font-weight: bold;
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   @media screen and (max-width: 420px) {
@@ -104,6 +104,16 @@ export const HeaderLogo = styled.div`
     }
   }
 `;
+
+export const HeaderUserBox = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media screen and (max-width: 900px){
+    display: none;
+  }
+`
 
 export const HeaderContainer = styled.header`
   position: fixed;
@@ -127,7 +137,7 @@ export const HeaderButtonBox = styled.div`
   display: flex;
   align-items: center;
   gap: 30px;
-  @media screen and (max-width: ${theme.screens.mediumScreen}) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;

@@ -40,11 +40,20 @@ export const loginUser = (userData) => async (dispatch) => {
     });
     console.log('User Data:', data.data);
 
-    localStorage.setItem('jwt', data.token);
+    // localStorage.setItem('jwt', data.token);
     localStorage.setItem('user', JSON.stringify(data.data));
 
+
+    let str = data.data.courseToLearn;
+
+    let newLink = str.replace(/\s+/g, '-').toLowerCase();
+
+    // str = str.replace(/\s+/g, '-').toLowerCase();
+
     toast.success(data.msg);
-    window.location.href = '/dashboard';
+    localStorage.setItem('user', JSON.stringify(data.data));
+    window.location.href = `/payment/${newLink}`;
+
   } catch (err) {
     if (err.response && err.response.data) {
       toast.error(err.response.data.msg);
