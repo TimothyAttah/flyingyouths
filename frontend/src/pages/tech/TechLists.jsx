@@ -4,17 +4,12 @@ import { Link } from 'react-router-dom';
 import { user } from '../../components/Authentication';
 const TechLists = ({ data, open }) => {
   const { techTitle, techPic, techFee, techDurations, techLink, } = data;
-  console.log(techTitle);
-
-
 
      let str = techTitle;
-
      let newLink = str.replace(/\s+/g, '-').toLowerCase();
 
 
   const scrollToTop = () => {
-
      document.body.scrollTop = 0;
      document.documentElement.scrollTop = 0;
   }

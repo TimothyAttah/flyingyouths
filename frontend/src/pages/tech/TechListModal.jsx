@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaTimes } from 'react-icons/fa';
 import * as Styles from './TechListModalStyles';
+import { Link } from 'react-router-dom';
 const TechListModal = ({ data, close }) => {
   const {
     techTitle,
@@ -10,6 +11,15 @@ const TechListModal = ({ data, close }) => {
     techDurations,
     techOutlines,
   } = data;
+
+  let str = techTitle;
+  let newLink = str.replace(/\s+/g, '-').toLowerCase();
+
+  const scrollToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
   return (
     <Styles.TechListModalContainer onClick={(e) => e.stopPropagation()}>
       <Styles.TechListModalImg>
@@ -35,6 +45,12 @@ const TechListModal = ({ data, close }) => {
         <Styles.TechListModalCloseButton onClick={close}>
           <FaTimes />
         </Styles.TechListModalCloseButton>
+
+        <Link to={`/payment/${newLink}`} onClick={scrollToTop}>
+          <Styles.TechListJoinButton>
+            Join the next cohort
+          </Styles.TechListJoinButton>
+        </Link>
       </Styles.TechListModalInfo>
     </Styles.TechListModalContainer>
   );

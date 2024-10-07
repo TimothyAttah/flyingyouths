@@ -1,20 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import {
-  FaUserAlt,
-  FaAt,
-  FaPhoneAlt,
-  FaEye,
-  FaEyeSlash,
-  FaKey,
-  FaCalendar,
-} from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { FaAt, FaPhoneAlt } from 'react-icons/fa';
+import { Link, useNavigate } from 'react-router-dom';
 import * as Styles from './RegisterAndLoginFormStyle';
 import { loginUser } from '../../redux/actions/authActions';
 import { useDispatch } from 'react-redux';
 
 const LoginForm = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate()
   const [userData, setUserData] = useState({
     email: '',
     phoneNumber: '',
@@ -29,6 +22,7 @@ const LoginForm = () => {
   const handleUserSubmit = (e) => {
     e.preventDefault();
     dispatch(loginUser(userData));
+    // navigate('/tech-skills');
   };
 
   return (
@@ -68,6 +62,10 @@ const LoginForm = () => {
         <Styles.HeroButton>
           <button>Login</button>
         </Styles.HeroButton>
+
+        <Styles.SmallLink>
+          Don't have an account? <Link to='/students/register'>Register here</Link>
+        </Styles.SmallLink>
       </form>
     </>
   );

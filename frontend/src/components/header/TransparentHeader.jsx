@@ -39,7 +39,7 @@ const TransparentHeader = () => {
 
         {user ? (
           <Styles.HeaderUserBox>
-            <h4>{user.firstname} {user.lastname}</h4>
+            <h5>{user.firstname} {user.lastname}</h5>
             <Styles.HeaderButton onClick={handleLogout}>Logout</Styles.HeaderButton>
           </Styles.HeaderUserBox>
         ) : (

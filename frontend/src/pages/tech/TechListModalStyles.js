@@ -155,3 +155,12 @@ export const TechListModalCloseButton = styled.button`
    top: 10px;
   }
 `;
+
+export const TechListJoinButton = styled.button`
+  width: 250px;
+  height: 40px;
+  background-color: navy;
+  color: #fff;
+  /* margin: 20px auto; */
+  border-radius: 20px;
+`;

@@ -238,3 +238,13 @@ export const CheckboxWrapper = styled.div`
     margin: 0;
   }
 `;
+
+export const SmallLink = styled.small`
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  margin-top: 30px;
+  a {
+    color: #0d6efd;
+  }
+`;

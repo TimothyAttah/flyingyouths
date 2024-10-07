@@ -107,10 +107,7 @@ const RegisterForm = () => {
     e.preventDefault();
     dispatch(registerUser(userData));
 
-    setTimeout(() => {
-
-    },300)
-
+    setTimeout(() => {}, 300);
   };
 
   return (
@@ -469,6 +466,10 @@ const RegisterForm = () => {
         <Styles.HeroButton>
           <button>Submit</button>
         </Styles.HeroButton>
+
+        <Styles.SmallLink>
+          Already have an account? <Link to='/students/login'>Login here</Link>
+        </Styles.SmallLink>
       </form>
     </>
   );

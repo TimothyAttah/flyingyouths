@@ -20,7 +20,7 @@ export const RequireRegistration = () => {
   return user ? (
     <Outlet />
   ) : (
-    <Navigate to='/students/register' state={{ from: location }} replace />
+    <Navigate to='/students/login' state={{ from: location }} replace />
   );
 };
 

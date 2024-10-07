@@ -15,15 +15,11 @@ export const registerUser = (userData) => async (dispatch) => {
 
     let newLink = str.replace(/\s+/g, '-').toLowerCase();
 
-
-
-
     // str = str.replace(/\s+/g, '-').toLowerCase();
 
     toast.success(data.msg);
     localStorage.setItem('user', JSON.stringify(data.data));
     window.location.href = `/payment/${newLink}`;
-
   } catch (err) {
     if (err.response && err.response.data) {
       toast.error(err.response.data.msg);
@@ -43,7 +39,6 @@ export const loginUser = (userData) => async (dispatch) => {
     // localStorage.setItem('jwt', data.token);
     localStorage.setItem('user', JSON.stringify(data.data));
 
-
     let str = data.data.courseToLearn;
 
     let newLink = str.replace(/\s+/g, '-').toLowerCase();
@@ -52,8 +47,8 @@ export const loginUser = (userData) => async (dispatch) => {
 
     toast.success(data.msg);
     localStorage.setItem('user', JSON.stringify(data.data));
-    window.location.href = `/payment/${newLink}`;
-
+    // window.location.href = `/payment/${newLink}`;
+    window.location.href = '/tech-skills';
   } catch (err) {
     if (err.response && err.response.data) {
       toast.error(err.response.data.msg);
