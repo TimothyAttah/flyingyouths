@@ -27,8 +27,8 @@ export const Testimony = () => {
       <Styles.EnrollWrapper>
         <h2>Your time is now</h2>
         <p>
-          Register today to be part of our next batch starting on 20th
-          October, 2024.
+          Register today to be part of our next batch starting on 25th
+          November, 2024.
         </p>
         <Styles.EnrollButtonWrapper>
           <Styles.HeroButton>

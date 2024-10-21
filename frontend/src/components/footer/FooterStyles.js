@@ -9,6 +9,10 @@ export const FooterContainer = styled.footer`
   h2, h4, p, a {
     /* color:#fff; */
   }
+
+  h2, h4 {
+    padding-bottom: 20px;
+  }
 `;
 
 export const FooterDetailsMainContainer = styled.div`
@@ -58,6 +62,7 @@ export const FooterDetailsPagesContainer = styled.div`
 
   p {
     font-weight: bold;
+    padding-bottom: 20px;
   }
 
   ul {
@@ -71,6 +76,7 @@ export const FooterDetailsPagesContainer = styled.div`
     li a {
       display: flex;
       font-size: 15px;
+      color:#333;
     }
   }
 
