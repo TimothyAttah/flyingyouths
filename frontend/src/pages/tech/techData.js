@@ -9,6 +9,8 @@ import cybersecurityPix from '../../assets/tech-cybersecurity.jpg';
 import modelingPix from '../../assets/tech-3d.jpg';
 import aiPix from '../../assets/tech-ai.jpg';
 import contentPix from '../../assets/tech-content.jpg';
+import dataAnalyticsPix from '../../assets/data-analytics.jpg';
+
 
 export const techsData = [
   {
@@ -134,6 +136,24 @@ export const techsData = [
       'Analytics and Tracking (Google Analytics, KPIs, A/B Testing)',
       ' Content Creation (Blogging, Vlogging, Influencer Marketing)',
       'Building a Marketing Portfolio (Case Studies, Reporting) Final Project: Run a small ad campaign on Google Ads and social media.',
+    ],
+  },
+  {
+    techTitle: 'Data Analytics ',
+    techLink: 'data-analytics-',
+    techDescription:
+      'Immerse yourself in hands-on learning and master the indispensable tools for shining as a Data Analyst.',
+    techPic: `${dataAnalyticsPix}`,
+    techFee: '₦360,000',
+    techPaymentFee: '360000',
+    techDurations: '5 Months',
+    techOutlines: [
+      'Introduction to Data Analytics',
+      'Data Retrieval and cleaning',
+      'Power BI Model Framework and DAX Operations',
+      'Creating Impactful stories and Dashbards',
+      'Microsoft Certified Power BI exam preparation',
+      'Project phase',
     ],
   },
   {

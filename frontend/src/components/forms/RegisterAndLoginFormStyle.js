@@ -7,8 +7,17 @@ export const InputBoxWrapper = styled.div`
   justify-content: space-between;
   gap: 20px;
 
+  label {
+    /* font-size: 10px; */
+  }
+
   @media screen and (max-width: ${theme.screens.smallScreen}) {
     flex-direction: column;
+
+    label {
+      /* font-size: 10px; */
+      margin-bottom: -20px;
+    }
   }
 `;
 

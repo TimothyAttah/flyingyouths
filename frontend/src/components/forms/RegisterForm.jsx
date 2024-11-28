@@ -115,6 +115,7 @@ const RegisterForm = () => {
       <h1>Register</h1>
       <form onSubmit={handleUserSubmit}>
         <Styles.InputBoxWrapper>
+          <label htmlFor=''>First Name:</label>
           <Styles.InputBox>
             <span>
               <FaUserAlt />
@@ -127,6 +128,8 @@ const RegisterForm = () => {
               onChange={handleUserInputData}
             />
           </Styles.InputBox>
+          <label htmlFor=''>Last Name:</label>
+
           <Styles.InputBox primary='true'>
             <span>
               <FaUserAlt />
@@ -141,6 +144,8 @@ const RegisterForm = () => {
           </Styles.InputBox>
         </Styles.InputBoxWrapper>
         <Styles.InputBoxWrapper>
+          <label htmlFor=''>Email:</label>
+
           <Styles.InputBox>
             <span>
               <FaAt />
@@ -156,6 +161,8 @@ const RegisterForm = () => {
         </Styles.InputBoxWrapper>
 
         <Styles.InputBoxWrapper>
+          <label htmlFor=''>Phone Number:</label>
+
           <Styles.InputBox>
             <span>
               <FaPhoneAlt />
@@ -168,6 +175,7 @@ const RegisterForm = () => {
               onChange={handleUserInputData}
             />
           </Styles.InputBox>
+          <label htmlFor=''>DOB:</label>
           <Styles.InputBox primary='true'>
             <span>
               <FaCalendar />
@@ -279,23 +287,34 @@ const RegisterForm = () => {
               onChange={handleUserInputData}
             >
               <option value=''>Select a Tech Course:</option>
-              <option value='Web Development'>Web Development (MERN)</option>
-              <option value='App Development'> App Development</option>
-              <option value='Graphic Design'>Graphic Design</option>
-              <option value='Video Editing'>Video Editing</option>
-              <option value='Digital Marketing'>Digital Marketing</option>
-              <option value='Game Development'>Game Development</option>
-              <option value='Cybersecurity'>Cybersecurity</option>
+              <option value='Web Development'>
+                Web Development (MERN) (₦400,000)
+              </option>
+              <option value='App Development'>
+                App Development (₦500,000)
+              </option>
+              <option value='Graphic Design'>Graphic Design (₦350,000)</option>
+              <option value='Video Editing'>Video Editing (₦350,000)</option>
+              <option value='Digital Marketing'>
+                Digital Marketing (₦350,000)
+              </option>
+              <option value='Data Analytics'>Data Analytics (₦360,000)</option>
+              <option value='Game Development'>
+                Game Development (₦650,000)
+              </option>
+              <option value='Cybersecurity'>Cybersecurity (₦350,000)</option>
               <option value='3D Modeling and Animation'>
-                3D Modeling and Animation
+                3D Modeling and Animation (₦650,000)
               </option>
               <option value='Artificial Intelligence (AI) and Machine Learning'>
-                Artificial Intelligence (AI) and Machine Learning
+                Artificial Intelligence (AI) and Machine Learning (₦1,750,000)
               </option>
               <option value='Blockchain Development'>
-                Blockchain Development
+                Blockchain Development (₦1,250,000)
               </option>
-              <option value='Content Creation'>Content Creation</option>
+              <option value='Content Creation'>
+                Content Creation (₦320,000)
+              </option>
             </select>
           </Styles.SelectBox>
           <Styles.SelectBox>
