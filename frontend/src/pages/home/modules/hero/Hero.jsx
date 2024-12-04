@@ -29,7 +29,11 @@ export const Hero = () => {
             {/* Choosing the Right Education Level for Your Future Success */}
              Unlock Your Future with In-Demand
             Tech Skills! Join Our Expert-Led Classes and Start Earning Big.
-            Enroll Now for Physical Training at Odogunyan, Ikorodu, Lagos State!
+            Enroll Now for Physical Training at 1, Ita-Oloja street, White House Bus Stop, Odogunyan, Ikorodu, Lagos State!
+            <br />Accommodation options available.
+            <br />Register fast to get discounts and Prices.
+
+
           </h1>
         </FadeIn>
 
