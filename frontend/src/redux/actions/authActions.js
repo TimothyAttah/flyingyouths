@@ -13,13 +13,17 @@ export const registerUser = (userData) => async (dispatch) => {
 
     let str = data.data.courseToLearn;
 
-    let newLink = str.replace(/\s+/g, '-').toLowerCase();
+    // let newLink = str.replace(/\s+/g, '-').toLowerCase();
+
+      // let str = techTitle;
+      let newLink = str.replace(/\s+/g, '-').toLowerCase();
 
     // str = str.replace(/\s+/g, '-').toLowerCase();
 
     toast.success(data.msg);
     localStorage.setItem('user', JSON.stringify(data.data));
     window.location.href = `/payment/${newLink}`;
+
   } catch (err) {
     if (err.response && err.response.data) {
       toast.error(err.response.data.msg);

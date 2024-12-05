@@ -1,11 +1,33 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import PaystackPop from '@paystack/inline-js';
 import Backdrop from '../../components/Backdrop';
 import * as Styles from './PaymentFormStyles';
 import { user } from '../../components/Authentication';
 
 const PaymentForm = ({ amount, paymentType, close }) => {
   const navigate = useNavigate();
+
+  const payWithPaystack = (e) => {
+    e.preventDefault();
+    const paystack = new PaystackPop();
+
+    paystack.newTransaction({
+      key: 'pk_test_d2fdd83059f4346941d44f730d55cea9a35a17e4',
+      amount: amount * 100,
+      firstName: user.firstname,
+      lastName: user.lastname,
+      email: user.email,
+      phone: user.phoneNumber,
+
+      onSuccess(transaction) {
+        console.log('This is payment>>>>>', transaction);
+      },
+      onCancel() {
+        console.log('You have canceled the transaction.');
+      },
+    });
+  };
 
   return (
     <div>
@@ -20,7 +42,7 @@ const PaymentForm = ({ amount, paymentType, close }) => {
             tech talent by enrolling in this intensive training in tech.
           </p>
         </Styles.PaymentFormInfo>
-        <Styles.PaymentForm>
+        <Styles.PaymentForm onSubmit={payWithPaystack}>
           <Styles.PaymentFormInputBoxWrapper>
             <Styles.PaymentFormInputBox>
               <label htmlFor='firstName'>First Name</label>
@@ -43,7 +65,9 @@ const PaymentForm = ({ amount, paymentType, close }) => {
             <label htmlFor='amount'>Amount</label>
             <input type='text' value={amount} disabled />
           </Styles.PaymentFormInputBox>
-          <Styles.PaymentFormButton>Pay Now</Styles.PaymentFormButton>
+          <Styles.PaymentFormButton type='submit'>
+            Pay Now
+          </Styles.PaymentFormButton>
         </Styles.PaymentForm>
       </Styles.PaymentFormContainer>
     </div>

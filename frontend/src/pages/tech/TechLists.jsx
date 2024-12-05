@@ -34,7 +34,7 @@ const TechLists = ({ data, open }) => {
             </Styles.TechListViewButton>
           </Styles.TechListRow>
           <Styles.TechListRow>
-            <Link to={`/payment/${newLink}`} onClick={scrollToTop}>
+            <Link to={`/payment/${techLink}`} onClick={scrollToTop}>
               <Styles.TechListJoinButton>
                 Join the next cohort
               </Styles.TechListJoinButton>

@@ -15,7 +15,7 @@ import dataAnalyticsPix from '../../assets/data-analytics.jpg';
 export const techsData = [
   {
     techTitle: 'Web Development (MERN)',
-    techLink: 'web-development-(mern)',
+    techLink: 'web-development',
     techDescription:
       'The class is 3times weekly We teach front end and Back end which include Html5, Css3, JavaScript, ReactJs, Expressjs, NodeJs, MongoDb all these makes anyone a good full MERN Developer.',
     techPic: `${webPix}`,
@@ -58,8 +58,8 @@ export const techsData = [
     // },
   },
   {
-    techTitle: ' App Development',
-    techLink: '-app-development',
+    techTitle: 'App Development',
+    techLink: 'app-development',
     techDescription:
       'Learning mobile app development (using Swift for iOS or Kotlin for Android) is highly marketable, especially with the demand for custom apps.',
     techPic: `${appPix}`,
@@ -81,8 +81,8 @@ export const techsData = [
     ],
   },
   {
-    techTitle: ' Graphic Design',
-    techLink: '-graphic-design',
+    techTitle: 'Graphic Design',
+    techLink: 'graphic-design',
     techDescription:
       'Tools like Adobe Photoshop, Illustrator, or Figma are valuable for design projects, logo creation, or social media content.',
     techPic: `${graphicPix}`,
@@ -139,8 +139,8 @@ export const techsData = [
     ],
   },
   {
-    techTitle: 'Data Analytics ',
-    techLink: 'data-analytics-',
+    techTitle: 'Data Analytics',
+    techLink: 'data-analytics',
     techDescription:
       'Immerse yourself in hands-on learning and master the indispensable tools for shining as a Data Analyst.',
     techPic: `${dataAnalyticsPix}`,
@@ -245,8 +245,8 @@ export const techsData = [
     ],
   },
   {
-    techTitle: 'Artificial Intelligence (AI) and Machine Learning tech ',
-    techLink: 'artificial-intelligence-(ai)-and-machine-learning-tech-',
+    techTitle: 'Artificial Intelligence (AI) and Machine Learning tech',
+    techLink: 'artificial-intelligence-(ai)-and-machine-learning',
     techDescription:
       'Explore AI tools, data science, and automation which help you in building innovative solutions or freelance data analysis projects.',
     techPic: `${aiPix}`,
@@ -270,8 +270,8 @@ export const techsData = [
     ],
   },
   {
-    techTitle: 'Content Creation ',
-    techLink: 'content-creation-',
+    techTitle: 'Content Creation',
+    techLink: 'content-creation',
     techDescription:
       'For those who want to Start a YouTube channel, podcast, or blog on a topic of interest can become a source of income through ad revenue, sponsorships, and affiliate marketing.',
     techPic: `${contentPix}`,

@@ -1,9 +1,8 @@
 import axios from 'axios';
 
 // export const baseURL = 'http://localhost:8080/api';
-// export const baseURL = 'https://enoch-boot-camp-school-sigma.vercel.app/api';
+// export const baseURL = 'https://enoch-boot-camp-school-sigma.vercel.app/api'; not this one
 export const baseURL = 'https://flyingyouths-backend.vercel.app/api';
-  // "proxy":"https://flyingyouths-backend.vercel.app/api",
 
 const API = axios.create({ baseURL: baseURL });
 
