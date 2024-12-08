@@ -42,7 +42,7 @@ const PaymentForm = ({ amount, paymentType, close }) => {
             tech talent by enrolling in this intensive training in tech.
           </p>
         </Styles.PaymentFormInfo>
-        <Styles.PaymentForm onSubmit={payWithPaystack}>
+        <Styles.PaymentForm>
           <Styles.PaymentFormInputBoxWrapper>
             <Styles.PaymentFormInputBox>
               <label htmlFor='firstName'>First Name</label>

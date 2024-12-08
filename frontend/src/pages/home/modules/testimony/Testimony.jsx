@@ -13,7 +13,7 @@ export const Testimony = () => {
         {reasonsData.map((item, i) => (
           <Styles.ReasonsList key={i}>
             <Styles.ReasonsListIcon>
-              <img src={item.icon} alt="" />
+              <img src={item.icon} alt='' />
             </Styles.ReasonsListIcon>
 
             <Styles.ReasonsListInfo>
@@ -27,8 +27,8 @@ export const Testimony = () => {
       <Styles.EnrollWrapper>
         <h2>Your time is now</h2>
         <p>
-          Register today to be part of our next batch starting on 25th
-          November, 2024.
+          Register today to be part of our next batch starting on 27th January,
+          2025.
         </p>
         <Styles.EnrollButtonWrapper>
           <Styles.HeroButton>
@@ -43,7 +43,6 @@ export const Testimony = () => {
           </Styles.HeroButton>
         </Styles.EnrollButtonWrapper>
       </Styles.EnrollWrapper>
-
     </>
   );
 };
