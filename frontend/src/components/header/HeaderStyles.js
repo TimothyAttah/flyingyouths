@@ -58,7 +58,7 @@ export const MainHeaderContainer = styled.div`
   max-width: 1500px;
   width: 100%;
   top: 0;
-  height: 70px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,6 +84,7 @@ export const HeaderLogo = styled.div`
   a {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   h1 {
     /* --to: left;
@@ -96,6 +97,46 @@ export const HeaderLogo = styled.div`
     display: flex;
     align-items: center;
     font-size: 1.2rem;
+  }
+
+  img {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 420px) {
+    a h1 {
+      font-size: 1.2rem;
+    }
+  }
+`;
+
+export const HeaderLogoSecond = styled.div`
+  a {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  span {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 20px; */
   }
 
   @media screen and (max-width: 420px) {
@@ -158,6 +199,7 @@ export const HeaderButton = styled.button`
   border-radius: 20px;
   background-image: linear-gradient(to bottom, #eee1, transparent, #eee1);
   transition: 0.5s;
+  text-transform: capitalize;
 
   :hover {
     /* background-color: #2836e0; */

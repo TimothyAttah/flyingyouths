@@ -6,6 +6,7 @@ import { AnimatePresence } from 'framer-motion';
 import { user } from '../Authentication';
 import { Link, useLocation } from 'react-router-dom';
 import { FadeIn } from '../fadeIn/FadeIn';
+import HeaderLogo from '../../assets/header-logo.png'
 
 const MainHeader = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -26,9 +27,12 @@ const MainHeader = () => {
     <FadeIn delay={0.6} direction='down'>
       <Styles.HeaderWrapper>
         <Styles.MainHeaderContainer>
-          <h1>
-            <Link to='/'>flyingyouths</Link>
-          </h1>
+          <Styles.HeaderLogoSecond>
+            <Link to='/'>
+              <img src={HeaderLogo} alt='' />
+              <span>EarnBigFromTech</span>
+            </Link>
+          </Styles.HeaderLogoSecond>
           <div>
             <Nav
               setShowSidebar={setShowSidebar}
@@ -38,7 +42,27 @@ const MainHeader = () => {
           </div>
           <div id='google_translate_element' className='langOptions'></div>
 
-          <Styles.HeaderButtonBox>
+          {user ? (
+            <Styles.HeaderUserBox>
+              <h5>
+                {user.firstname} {user.lastname}
+              </h5>
+              <Styles.HeaderButton onClick={handleLogout}>
+                Logout
+              </Styles.HeaderButton>
+            </Styles.HeaderUserBox>
+          ) : (
+            <Styles.HeaderButtonBox>
+              <Link to='/students/register'>
+                <Styles.HeaderButton>Register</Styles.HeaderButton>
+              </Link>
+              <Link to='/students/login'>
+                <Styles.HeaderButton>Login</Styles.HeaderButton>
+              </Link>
+            </Styles.HeaderButtonBox>
+          )}
+
+          {/* <Styles.HeaderButtonBox>
             {!user ? (
               <div>
                 <Link to='/signup'>
@@ -52,7 +76,7 @@ const MainHeader = () => {
                 </a>
               </div>
             )}
-          </Styles.HeaderButtonBox>
+          </Styles.HeaderButtonBox> */}
 
           <AnimatePresence>
             {showSidebar && <SideBar setShowSidebar={setShowSidebar} />}

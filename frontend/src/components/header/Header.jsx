@@ -4,7 +4,7 @@ import MainHeader from './MainHeader';
 
 const Header = () => {
   const location = useLocation();
-  const user = true;
+  const user = JSON.parse(localStorage.getItem('user'));
 
   return (
     <>
@@ -13,11 +13,7 @@ const Header = () => {
       ) : (
         <MainHeader />
       )} */}
-      {user? (
-        <TransparentHeader />
-      ) : (
-        <MainHeader />
-      )}
+      {user ? <TransparentHeader /> : <MainHeader />}
     </>
   );
 };

@@ -6,6 +6,7 @@ import { AnimatePresence } from 'framer-motion';
 import { user } from '../Authentication';
 import { Link} from 'react-router-dom';
 import { FadeIn } from '../fadeIn/FadeIn';
+import HeaderLogo from '../../assets/logo3.png';
 
 const TransparentHeader = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -27,6 +28,7 @@ const TransparentHeader = () => {
       <Styles.MainHeaderContainer className={changeBG ? 'activeHeader' : ''}>
         <Styles.HeaderLogo>
           <Link to='/' className={changeBG ? 'activeLogo' : ''}>
+            <img src={HeaderLogo} alt='' />
             <h1>EarnBigFromTech</h1>
           </Link>
         </Styles.HeaderLogo>
@@ -39,8 +41,12 @@ const TransparentHeader = () => {
 
         {user ? (
           <Styles.HeaderUserBox>
-            <h5>{user.firstname} {user.lastname}</h5>
-            <Styles.HeaderButton onClick={handleLogout}>Logout</Styles.HeaderButton>
+            <h5>
+              {user.firstname} {user.lastname}
+            </h5>
+            <Styles.HeaderButton onClick={handleLogout}>
+              Logout
+            </Styles.HeaderButton>
           </Styles.HeaderUserBox>
         ) : (
           <Styles.HeaderButtonBox>
