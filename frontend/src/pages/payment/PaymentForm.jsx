@@ -34,15 +34,35 @@ const PaymentForm = ({ amount, paymentType, close }) => {
       <Backdrop onClick={close} />
       <Styles.PaymentFormContainer>
         <Styles.PaymentFormInfo>
-          <h4>
+          {/* <h4>
             EarnBigFromTech School <br /> Week day({paymentType})
-          </h4>
-          <p>
+          </h4> */}
+          {/* <p>
             Take advantage of this payment plan to become a highly sought after
             tech talent by enrolling in this intensive training in tech.
-          </p>
+          </p> */}
         </Styles.PaymentFormInfo>
-        <Styles.PaymentForm onSubmit={payWithPaystack}>
+        <Styles.PaymentAccountDetails>
+          <h5>Bank: GTB Bank</h5>
+          <div>
+            <p>A/c No: </p>
+            <span>0113544333</span>
+          </div>
+          <div>
+            <p>A/c Name: </p>
+            <span>Enoch Louis Ventures Limited</span>
+          </div>
+          <br />
+          <p>
+            Send a screenshot of payment to <br />
+            <b> enochlouis1@gmail.com</b>
+            <br />
+            or
+            <br />
+            Whatsapp num: <b>+2348038724054</b>
+          </p>
+        </Styles.PaymentAccountDetails>
+        {/* <Styles.PaymentForm onSubmit={payWithPaystack}>
           <Styles.PaymentFormInputBoxWrapper>
             <Styles.PaymentFormInputBox>
               <label htmlFor='firstName'>First Name</label>
@@ -68,7 +88,7 @@ const PaymentForm = ({ amount, paymentType, close }) => {
           <Styles.PaymentFormButton type='submit'>
             Pay Now
           </Styles.PaymentFormButton>
-        </Styles.PaymentForm>
+        </Styles.PaymentForm> */}
       </Styles.PaymentFormContainer>
     </div>
   );
