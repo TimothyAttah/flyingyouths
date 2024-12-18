@@ -88,6 +88,37 @@ const Payment = () => {
         <div>
           <PaymentFeeCard />
         </div>
+        <div
+          style={{
+            marginTop: '20px',
+            maxWidth: '350px',
+            width: '100%',
+            margin: '20px auto',
+            // textAlign:"center"
+            padding: '10px',
+          }}
+        >
+          <h5>Bank: GTB Bank</h5>
+          <div style={{ display: 'flex' }}>
+            <p style={{ fontWeight: 'bold', width: '80px' }}>A/c No: </p>
+            <span style={{ fontWeight: 'bold' }}>0113544333</span>
+          </div>
+          <div style={{ display: 'flex' }}>
+            <p style={{ fontWeight: 'bold', width: '90px' }}>A/c Name: </p>
+            <span style={{ fontWeight: 'bold' }}>
+              Enoch Louis Ventures Limited
+            </span>
+          </div>
+
+          <p>
+            Send a screenshot of payment to <br />
+            <b> enochlouis1@gmail.com</b>
+            <br />
+            or
+            <br />
+            Whatsapp num: <b>+2348038724054</b>
+          </p>
+        </div>
       </Styles.PaymentContainer>
     </div>
   );
