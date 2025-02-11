@@ -70,7 +70,7 @@ export const HeroSubTitle = styled.p`
   text-align: center;
   /* color: #111;
   color: #040018; */
-  
+
   font-family: 'Lato', sans-serif;
 
   font-size: 1.4rem;
@@ -97,7 +97,7 @@ export const HeroSubTitle = styled.p`
 
 export const HeroButton = styled.div`
   all: unset;
-  width: 200px;
+  width: 480px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -106,6 +106,10 @@ export const HeroButton = styled.div`
   margin: 0 auto;
   margin-top: 12px;
   border: none;
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 20px;
 
   a,
   button {
@@ -131,6 +135,13 @@ export const HeroButton = styled.div`
       /* color: #040018; */
       /* box-shadow: 0 0 50px #c691e6; */
     }
+  }
+
+   @media screen and (max-width: 570px) {
+    /* flex-wrap: wrap; */
+    flex-direction:column;
+    width: 250px;
+    /* height: 90px; */
   }
 `;
 
