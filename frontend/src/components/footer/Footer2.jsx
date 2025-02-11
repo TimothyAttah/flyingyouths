@@ -58,7 +58,7 @@ const Footer2 = () => {
         </FadeIn>
       </Styles.FooterDetailsMainContainer>
       <Styles.FooterDetailsContainer>
-        <h4> &copy;2024. EarnBigFromTech. All Rights Reserved.</h4>
+        <h4> &copy;2025. EarnBigFromTech. All Rights Reserved.</h4>
       </Styles.FooterDetailsContainer>
     </Styles.FooterContainer>
   );

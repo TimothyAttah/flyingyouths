@@ -36,7 +36,9 @@ export const ReasonsListIcon = styled.div`
     width: 200px;
   }
 `;
-export const ReasonsListTitle = styled.div``;
+export const ReasonsListTitle = styled.div`
+  /* color: */
+`;
 export const ReasonsListInfo = styled.div`
   font-family: 'Lato', sans-serif;
 `;
@@ -46,8 +48,8 @@ export const TestimonyWrapper = styled.div`
   padding-top: 40px;
   h2 {
     text-align: center;
-    color: #0d6efd;
-    color: #040018;
+    /* color: #0d6efd;
+    color: #040018; */
     margin-bottom: 20px;
    font-family: 'Lato', sans-serif;
   }
@@ -148,6 +150,5 @@ export const ApplyNowContainer = styled.div`
   text-align: center;
   h2 {
     text-transform: capitalize;
-
   }
 `;

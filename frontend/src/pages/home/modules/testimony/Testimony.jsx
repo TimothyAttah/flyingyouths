@@ -8,7 +8,9 @@ import { Link } from 'react-router-dom';
 export const Testimony = () => {
   return (
     <>
-      <Styles.ReasonsTitle>why EarnBigFromTech?</Styles.ReasonsTitle>
+      <Styles.ReasonsTitle>
+        why choose Enoch Louis EBT?
+      </Styles.ReasonsTitle>
       <Styles.ReasonsListsContainer>
         {reasonsData.map((item, i) => (
           <Styles.ReasonsList key={i}>
@@ -27,7 +29,7 @@ export const Testimony = () => {
       <Styles.EnrollWrapper>
         <h2>Your time is now</h2>
         <p>
-          Register today to be part of our next batch starting on 27th January,
+          Register today to be part of our next batch starting on 10th March,
           2025.
         </p>
         <Styles.EnrollButtonWrapper>

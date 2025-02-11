@@ -9,13 +9,14 @@ export const AboutImgContentWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  background-image: url(${backroundPic});
-  height: 100vh;
+  /* background-image: url(${backroundPic}); */
+  height: 50vh;
   /* padding-top: 20%; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-bottom: 50px;
+  margin-top: 20px;
 
   @media screen and (max-width: 600px) {
     height: 70vh;
@@ -48,12 +49,13 @@ export const AboutImgContent = styled.div`
   }
 
   h1 {
-    --to: bottom;
+    /* --to: bottom; */
     font-size: 3rem;
     font-weight: bolder;
-    background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
+    /* background-image: linear-gradient(to var(--to), #89a5df, #e46e7f, #e8e191);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color: #333;
     text-transform: uppercase;
     line-height: 3.5rem;
     padding-bottom: 5px;
@@ -64,6 +66,8 @@ export const AboutImgContent = styled.div`
   p {
     font-size: 20px;
     color: #e8e191;
+    color: #999;
+
     font-weight: bold;
     font-family: 'Lato', sans-serif;
   }

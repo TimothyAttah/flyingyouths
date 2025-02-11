@@ -3,7 +3,7 @@ import * as Styles from './TechListsStyles';
 import { Link } from 'react-router-dom';
 import { user } from '../../components/Authentication';
 const TechLists = ({ data, open }) => {
-  const { techTitle, techPic, techFee, techDurations, techLink, } = data;
+  const { techTitle, techPic, techFee, techFeeFormal, techDurations, techLink } = data;
 
      let str = techTitle;
      let newLink = str.replace(/\s+/g, '-').toLowerCase();
@@ -25,6 +25,7 @@ const TechLists = ({ data, open }) => {
             <Styles.TechListTitle>{techTitle}</Styles.TechListTitle>
           </Styles.TechListRow>
           <Styles.TechListRowBox>
+            <span style={{textDecoration:'line-through'}}>{techFeeFormal}</span>
             <Styles.TechListFee>{techFee}</Styles.TechListFee>
             <Styles.TechListDuration>{techDurations}</Styles.TechListDuration>
           </Styles.TechListRowBox>

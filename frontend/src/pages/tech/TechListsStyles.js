@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const TechListContainer = styled.div`
   min-width: 300px;
   width: 100%;
-  width: 300px;
+  width: 350px;
   position: relative;
   margin: 20px;
   /* cursor: pointer; */

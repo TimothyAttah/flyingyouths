@@ -2,7 +2,7 @@ export const faqsData = [
   {
     title: 'I don’t have any background knowledge in programming, can I apply?',
     content:
-      'Yes, you can. You don’t need any background knowledge in IT or coding before you can register. Having one is only an advantage for you. At flyingyouths, we start from the basics and guide you through all you need to know to be a successful software developer.',
+      'Yes, you can. You don’t need any background knowledge in IT or coding before you can register. Having one is only an advantage for you. At Enoch Louis EBT, we start from the basics and guide you through all you need to know to be a successful software developer.',
     id: 'list1',
     faqNum: '01',
   },
@@ -31,28 +31,27 @@ export const faqsData = [
     title:
       'I have basic knowledge in software development already. Do you have an advanced package for me?',
     content:
-      'Yes, at flyingyouths, we offer advanced training to people who have completed a course(s) in programming, but wish to learn more.',
+      'Yes, at Enoch Louis EBT, we offer advanced training to people who have completed a course(s) in programming, but wish to learn more.',
     id: 'list5',
     faqNum: '05',
   },
   {
     title: 'Can we register for courses online via the website?',
     content:
-      'Yes. Payments are made to flyingyouths official accounts through any of Mobile payments, electronic bank transfers, USSD or bank teller system.',
+      'Yes. Payments are made to Enoch Louis EBT official accounts through any of Mobile payments, electronic bank transfers, USSD or bank teller system.',
     id: 'list6',
     faqNum: '06',
   },
   {
-    title: 'Is Flyingyouths of Programming government owned?',
+    title: 'Is Enoch Louis EBT of Programming government owned?',
     content:
-      'Flyingyouths of Programming is a private owned company, approved by government.',
+      'Enoch Louis EBT of Programming is a private owned company, approved by government.',
     id: 'list7',
     faqNum: '07',
   },
   {
     title: 'How Much Is Course fee?',
-    content:
-      'Course fee is variant, depending on the course one decides to go for. Visit tuition and fees pages for details',
+    content: `Course fee is variant, depending on the course one decides to go for. Visit tech skills page for details.`,
     id: 'list8',
     faqNum: '08',
   },
@@ -65,7 +64,7 @@ export const faqsData = [
   {
     title: 'What are the courses offered',
     content:
-      'The courses available across our centers are: Fullstack Web Development, Frontend Web Development, Backend Web Development, Development, UI/UX, Microsoft Word, Microsoft Excel, Robotics and Data Analysis',
+      'The courses available across our centers are: Fullstack Web Development, Data Analysis, Artificial Intelligence, and Cybersecurity etc.',
     id: 'list10',
     faqNum: '10',
   },

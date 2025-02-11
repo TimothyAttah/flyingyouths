@@ -12,8 +12,8 @@ export const HeroContainer = styled.div`
     font-size: 3rem;
     font-weight: bold;
     color: #333;
-    color: #111;
-    color: #040018;
+    /* color: #111;
+    color: #040018; */
     line-height: 3.5rem;
     padding-bottom: 5px;
     margin-top: 20px;
@@ -68,8 +68,9 @@ export const HeroSubTitle = styled.p`
   align-items: center;
   justify-content: center; */
   text-align: center;
-  color: #111;
-  color: #040018;
+  /* color: #111;
+  color: #040018; */
+  
   font-family: 'Lato', sans-serif;
 
   font-size: 1.4rem;

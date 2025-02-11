@@ -39,11 +39,11 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    paymentTerms: {
-      type: Boolean,
-      required: true,
-      default: false,
-    },
+    // paymentTerms: {
+    //   type: Boolean,
+    //   required: true,
+    //   default: false,
+    // },
     programAdvert: {
       type: [],
       required: true,

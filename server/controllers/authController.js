@@ -15,7 +15,7 @@ const authControllers = {
         courseToLearn,
         highestQualification,
         intentions,
-        paymentTerms,
+        // paymentTerms,
         programAdvert,
         termsAndConditions,
       } = req.body;
@@ -35,7 +35,7 @@ const authControllers = {
         courseToLearn,
         highestQualification,
         intentions,
-        paymentTerms,
+        // paymentTerms,
         programAdvert,
         termsAndConditions,
       });

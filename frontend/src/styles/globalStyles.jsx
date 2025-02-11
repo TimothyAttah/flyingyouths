@@ -57,6 +57,7 @@ export const GlobalStyle = createGlobalStyle`
     border:0;
     text-decoration: none;
     list-style: none;
+    ${'' /* color: #333; */}
       ${'' /* font-family: "Roboto", sans-serif; */}
   ${'' /* font-family: 'Noto Serif', system-ui; */}
 ${'' /* font-family: "Cormorant Garamond", system-ui; */}

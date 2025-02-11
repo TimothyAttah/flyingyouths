@@ -85,9 +85,9 @@ const Payment = () => {
           </p>
         </Styles.PaymentDescription>
 
-        <div>
+        {/* <div>
           <PaymentFeeCard />
-        </div>
+        </div> */}
         <div
           style={{
             marginTop: '20px',

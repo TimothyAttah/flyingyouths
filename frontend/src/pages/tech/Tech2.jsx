@@ -16,7 +16,7 @@ const Tech = () => {
         <Styles.TechTitle>Our Tech Courses</Styles.TechTitle>
         <Styles.TechSubTitle>
           Select your course and register today to be part of our next cohort
-          starting on 27th January, 2025.
+          starting on 10th March, 2025.
         </Styles.TechSubTitle>
         <Styles.TechWrapper>
           {techsData.map((item, i) => (

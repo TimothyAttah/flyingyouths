@@ -88,12 +88,12 @@ const Contact = () => {
                   />
                 </Styles.InputBox>
 
-                <div>
+                {/* <div>
                   <select>
                     <option>Item 1</option>
                     <option>Item 1</option>
                   </select>
-                </div>
+                </div> */}
                 <Styles.InputBox>
                   <input
                     type='text'

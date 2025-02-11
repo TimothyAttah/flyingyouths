@@ -15,25 +15,34 @@ export const Hero = () => {
           <img src={heroBg} alt='' />
         </div>
 
-        <div></div>
+        <div style={{ marginTop: '30px' }}>
+          <button
+            style={{ background: 'crimson', color: '#fff', padding: '10px' }}
+          >
+            March In-take
+          </button>
+        </div>
         <FadeIn delay={0.4} direction='down'>
           <h1>
             {/* Welcome to EarnBigFromTech centre for open distance and e-Learning */}
-            Welcome to EarnBigFromTech Academy, powered by Enoch Louis Ventures
-            LTD.
+            {/* Welcome to EarnBigFromTech Academy, powered by Enoch Louis Ventures
+            LTD. */}
           </h1>
         </FadeIn>
 
         <FadeIn delay={0.5} direction='down'>
-          <h1 className='right' >
+          <h1 className='right'>
             {/* Choosing the Right Education Level for Your Future Success */}
-             Unlock Your Future with In-Demand
-            Tech Skills! Join Our Expert-Led Classes and Start Earning Big.
-            Enroll Now for Physical Training at 1, Ita-Oloja street, White House Bus Stop, Odogunyan, Ikorodu, Lagos State!
-            <br />Accommodation options available.
-            <br />Register fast to get discounts and Prices.
-
-
+            {/* Unlock Your Future with In-Demand
+            Tech Skills! */}
+            Join Our Expert-Led Physical Classes {/* and Start Earning Big. */}
+            {/* Enroll Now for Physical Training */}
+            at 1, Ita-Oloja street, White House Bus Stop, Odogunyan, Ikorodu,
+            Lagos State!
+            {/* <br />Accommodation options available. */}
+            <br />
+            <br />
+            Register fast to get discounts and Prices.
           </h1>
         </FadeIn>
 

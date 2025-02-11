@@ -25,7 +25,7 @@ const RegisterForm = () => {
     courseToLearn: '',
     highestQualification: '',
     intentions: '',
-    paymentTerms: '',
+    // paymentTerms: '',
     programAdvert: [],
     termsAndConditions: '',
   });
@@ -353,7 +353,7 @@ const RegisterForm = () => {
           }}
         />
 
-        <Styles.TermsAndConditions>
+        {/* <Styles.TermsAndConditions>
           <div>
             <input
               type='checkbox'
@@ -365,7 +365,7 @@ const RegisterForm = () => {
             If you are selected, are you ready to pay 80% of your tuition fee to
             secure your slot for this course and get N50,000 discount?
           </h5>
-        </Styles.TermsAndConditions>
+        </Styles.TermsAndConditions> */}
 
         {/* <div>
           <h4>What course are you enrolling for?</h4>

@@ -119,7 +119,6 @@ export const Quote = styled.blockquote`
 
   @media screen and (max-width: 576px) {
     .bottom-quote {
-
       right: 0;
     }
   }
@@ -133,7 +132,7 @@ export const TestimonialReviewImg = styled.img`
   border: 5px solid #f6f6f6;
 
   @media screen and (max-width: 576px) {
-   margin-inline: auto;
+    margin-inline: auto;
   }
 `;
 export const TestimonialReviewContent = styled.div``;
