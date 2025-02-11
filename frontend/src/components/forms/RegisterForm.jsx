@@ -288,9 +288,39 @@ const RegisterForm = () => {
             >
               <option value=''>Select a Tech Course:</option>
               <option value='Web Development'>
-                Web Development (MERN) (₦400,000)
+                Web Development (MERN){' '}
+                {/* <span
+                  style={{
+                    textDecoration: 'line-through',
+                    display: 'inline-block',
+                  }}
+                >
+                  (₦400,000){' '}
+                </span>{' '} */}
+                <span>(₦250,000) </span>
               </option>
-              <option value='App Development'>
+              <option value='cybersecurity'>
+                Cybersecurity{' '}
+                {/* <span style={{ textDecoration: 'line-through' }}>
+                  (₦400,000){' '}
+                </span>{' '} */}{' '}
+                <span>(₦200,000) </span>
+              </option>
+              <option value='data-analysis'>
+                Data Analysis
+                {/* <span style={{ textDecoration: 'line-through' }}>
+                  (₦450,000){' '}
+                </span>{' '} */}{' '}
+                <span>(₦200,000) </span>
+              </option>
+              <option value='Artificial Intelligence (AI) and Machine Learning'>
+                Artificial Intelligence (AI) and Machine Learning
+                {/* <span style={{ textDecoration: 'line-through' }}>
+                  (₦1,750,000)
+                </span>{' '} */}{' '}
+                <span>(₦500,000) </span>
+              </option>
+              {/* <option value='App Development'>
                 App Development (₦500,000)
               </option>
               <option value='Graphic Design'>Graphic Design (₦350,000)</option>
@@ -305,16 +335,14 @@ const RegisterForm = () => {
               <option value='Cybersecurity'>Cybersecurity (₦350,000)</option>
               <option value='3D Modeling and Animation'>
                 3D Modeling and Animation (₦650,000)
-              </option>
-              <option value='Artificial Intelligence (AI) and Machine Learning'>
-                Artificial Intelligence (AI) and Machine Learning (₦1,750,000)
-              </option>
-              <option value='Blockchain Development'>
+              </option> */}
+
+              {/* <option value='Blockchain Development'>
                 Blockchain Development (₦1,250,000)
               </option>
               <option value='Content Creation'>
                 Content Creation (₦320,000)
-              </option>
+              </option> */}
             </select>
           </Styles.SelectBox>
           <Styles.SelectBox>
